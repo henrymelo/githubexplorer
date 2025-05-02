@@ -12,14 +12,13 @@ jobs:
     steps:
     - name: Checkout project
       uses: actions/checkout@v3
-
     - name: Set up Xcode
       uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: '16.2'
 
-      - name: Run SwiftLint (via CocoaPods)
-        run: |
+    - name: Run SwiftLint (via CocoaPods)
+      run: |
           Pods/SwiftLint/swiftlint lint --config .swiftlint.yml
     - name: Run tests
       run: |
