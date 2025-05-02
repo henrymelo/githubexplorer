@@ -8,12 +8,14 @@
 
 import AlamofireImage
 import UIKit
+import SnapKit
 
 
 private let avatarImageView = UIImageView()
 private let locationLabel = UILabel()
 
 class UserDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    private let errorView = ErrorStateView()
     var username: String?
     var viewModel: UserDetailViewModelProtocol
 
@@ -31,6 +33,23 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    private func showErrorState(message: String, retryHandler: @escaping () -> Void) {
+        errorView.configure(message: message)
+        errorView.onRetry = retryHandler
+        if errorView.superview == nil {
+            view.addSubview(errorView)
+        }
+        errorView.isHidden = false
+        view.bringSubviewToFront(errorView)
+        errorView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+
+    private func hideErrorState() {
+        errorView.isHidden = true
     }
 
     override func viewDidLoad() {
@@ -65,6 +84,7 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
         viewModel.onRepositoriesUpdated = { [weak self] in
             DispatchQueue.main.async {
                 self?.activityIndicator.stopAnimating()
+                self?.hideErrorState()
                 self?.tableView.reloadData()
             }
         }
@@ -87,7 +107,9 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
                 self.tableView.reloadData()
             }
             .catch { error in
-                print("Erro ao carregar dados do usuário: \(error)")
+                self.showErrorState(message: "Não foi possível carregar os detalhes dos dados do usuário selecionado. Por favor, Tente novamente mais tarde.") {
+                    self.loadUserDetails()
+                }
             }
     }
 

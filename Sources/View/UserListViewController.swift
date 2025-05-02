@@ -9,9 +9,11 @@
 import SkeletonView
 import UIKit
 import SnapKit
+import SnapKit
 import PromiseKit
 
 class UserListViewController: UIViewController {
+    private let errorView = ErrorStateView()
     final private let appNameLabel: UILabel = {
         let label = UILabel()
         label.text = "GitHub\nExplorer"
@@ -54,6 +56,23 @@ class UserListViewController: UIViewController {
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    
+
+    private func showErrorState(message: String, retryHandler: @escaping () -> Void) {
+        errorView.configure(message: message)
+        errorView.onRetry = retryHandler
+        view.addSubview(errorView)
+        errorView.isHidden = false
+        view.bringSubviewToFront(errorView)
+        errorView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+
+    private func hideErrorState() {
+        errorView.isHidden = true
     }
 
     override func viewDidLoad() {
@@ -135,7 +154,8 @@ class UserListViewController: UIViewController {
     private func bindViewModel() {
         viewModel.onUsersUpdated = { [weak self] in
             self?.loading.stopAnimating()
-            self?.tableView.reloadData()
+            self?.hideErrorState()
+                self?.tableView.reloadData()
             self?.emptyLabel.isHidden = !(self?.viewModel.users.isEmpty ?? true)
         }
     }
@@ -143,7 +163,9 @@ class UserListViewController: UIViewController {
     private func fetchUsers() {
         loading.startAnimating()
         viewModel.fetchUsers().catch { error in
-            print("Erro ao buscar usuários: \(error)")
+            self.showErrorState(message: "Não foi possível carregar a lista de usuários do GitHub. Não foi possível acessar o servidor. Verifique a conexão ou tente novamente mais tarde.") {
+                self.fetchUsers()
+            }
             self.loading.stopAnimating()
         }
     }
