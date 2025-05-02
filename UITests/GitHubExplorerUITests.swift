@@ -25,7 +25,7 @@ final class GitHubExplorerUITests: XCTestCase {
         app.launchArguments.append("-simulateError")
         app.launch()
 
-        let retryButton = app.buttons[AppStrings.tryAgain]
+        let retryButton = app.buttons["Tentar novamente"]
         let exists = retryButton.waitForExistence(timeout: 5)
         XCTAssertTrue(exists, "Botão de tentar novamente não apareceu após simulação de erro.")
     }

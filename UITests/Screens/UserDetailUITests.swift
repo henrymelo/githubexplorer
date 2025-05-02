@@ -21,7 +21,7 @@ final class UserDetailUITests: XCTestCase {
             firstCell.tap()
 
             let errorLabel = app.staticTexts["Erro ao carregar detalhes do usuário."]
-            let retryButton = app.buttons[AppStrings.tryAgain]
+            let retryButton = app.buttons["Tentar novamente"]
 
             XCTAssertTrue(errorLabel.waitForExistence(timeout: 3))
             XCTAssertTrue(retryButton.exists)
