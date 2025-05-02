@@ -61,7 +61,7 @@ class UserListViewController: UIViewController {
     
 
     private func showErrorState(message: String, retryHandler: @escaping () -> Void) {
-        errorView.configure(message: message)
+        errorView.configure(type: .network, message: message)
         errorView.onRetry = retryHandler
         view.addSubview(errorView)
         errorView.isHidden = false
@@ -163,7 +163,7 @@ class UserListViewController: UIViewController {
     private func fetchUsers() {
         loading.startAnimating()
         viewModel.fetchUsers().catch { error in
-            self.showErrorState(message: "Não foi possível carregar a lista de usuários do GitHub. Não foi possível acessar o servidor. Verifique a conexão ou tente novamente mais tarde.") {
+            self.showErrorState(message: "Não foi possível carregar a lista de usuários do GitHub. Verifique a conexão ou tente novamente mais tarde.") {
                 self.fetchUsers()
             }
             self.loading.stopAnimating()

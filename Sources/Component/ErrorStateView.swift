@@ -9,7 +9,37 @@
 import UIKit
 import SnapKit
 
+enum ErrorType {
+    case network
+    case empty
+    case unauthorized
+    case unknown
+
+    var emoji: String {
+        switch self {
+        case .network: return "⚠️"
+        case .empty: return "📭"
+        case .unauthorized: return "🔒"
+        case .unknown: return "❗️"
+        }
+    }
+
+    var defaultMessage: String {
+        switch self {
+        case .network:
+            return "Não foi possível carregar a lista. Verifique sua conexão e tente novamente mais tarde."
+        case .empty:
+            return "Nenhum conteúdo encontrado."
+        case .unauthorized:
+            return "Você não tem permissão para acessar este conteúdo."
+        case .unknown:
+            return "Não foi possível completar a ação. Por favor, tente novamente mais tarde."
+        }
+    }
+}
+
 final class ErrorStateView: UIView {
+    private let emojiLabel = UILabel()
     private let messageLabel = UILabel()
     private let retryButton = UIButton(type: .system)
 
@@ -25,12 +55,16 @@ final class ErrorStateView: UIView {
         setup()
     }
 
-    func configure(message: String) {
-        messageLabel.text = message
+    func configure(type: ErrorType, message: String? = nil) {
+        emojiLabel.text = type.emoji
+        messageLabel.text = message ?? type.defaultMessage
     }
 
     private func setup() {
         backgroundColor = .systemBackground
+
+        emojiLabel.font = UIFont.systemFont(ofSize: 72)
+        emojiLabel.textAlignment = .center
 
         messageLabel.textAlignment = .center
         messageLabel.numberOfLines = 0
@@ -39,12 +73,17 @@ final class ErrorStateView: UIView {
         retryButton.setTitle("Tentar novamente", for: .normal)
         retryButton.addTarget(self, action: #selector(retryTapped), for: .touchUpInside)
 
+        addSubview(emojiLabel)
         addSubview(messageLabel)
         addSubview(retryButton)
 
-        messageLabel.snp.makeConstraints { make in
+        emojiLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().offset(-20)
+            make.centerY.equalToSuperview().offset(-80)
+        }
+
+        messageLabel.snp.makeConstraints { make in
+            make.top.equalTo(emojiLabel.snp.bottom).offset(16)
             make.left.right.equalToSuperview().inset(20)
         }
 
