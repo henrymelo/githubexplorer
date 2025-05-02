@@ -1,9 +1,3 @@
-
-      - name: Install XcodeGen
-        run: brew install xcodegen
-
-      - name: Generate Xcode project
-        run: xcodegen
 name: iOS CI
 
 on:
@@ -24,11 +18,6 @@ jobs:
       with:
         xcode-version: '16.2'
 
-    - name: Install dependencies
-      run: |
-        brew install cocoapods || true
-        pod install
-
       - name: Run SwiftLint (via CocoaPods)
         run: |
           Pods/SwiftLint/swiftlint lint --config .swiftlint.yml
@@ -41,11 +30,3 @@ jobs:
           -destination "platform=iOS Simulator,name=iPhone 15" \
           -enableCodeCoverage YES | xcpretty
 
-      - name: Post-process test report (add index.html and CNAME)
-        run: ./Scripts/post_report.sh
-      - name: Deploy report to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/reports
-          publish_branch: gh-pages
