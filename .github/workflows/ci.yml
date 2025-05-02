@@ -22,6 +22,7 @@ jobs:
           Pods/SwiftLint/swiftlint lint --config .swiftlint.yml
     - name: Run tests
       run: |
+        set -o pipefail && \
         xcodebuild test \
           -scheme GitHubExplorer \
           -project GitHubExplorer.xcodeproj \
