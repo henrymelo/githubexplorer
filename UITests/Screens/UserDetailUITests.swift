@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import GitHubExplorer
 
 final class UserDetailUITests: XCTestCase {
 
