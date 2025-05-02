@@ -64,6 +64,14 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
     }
 
     private func setupUI() {
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(activityIndicator)
+
+        NSLayoutConstraint.activate([
+            activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "RepoCell")
         tableView.dataSource = self
         tableView.delegate = self
@@ -97,6 +105,7 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
 
         activityIndicator.startAnimating()
 
+        activityIndicator.startAnimating()
         viewModel.fetchUserDetail(username: username)
             .then { self.viewModel.fetchRepositories(for: username) }
             .done {
@@ -109,6 +118,7 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
                 self.tableView.reloadData()
             }
             .catch { error in
+                self.activityIndicator.stopAnimating()
                 self.showErrorState(message: "Não foi possível carregar os detalhes dos dados do usuário selecionado. Por favor, Tente novamente mais tarde.") {
                     self.loadUserDetails()
                 }

@@ -155,6 +155,8 @@ class UserListViewController: UIViewController {
         viewModel.onUsersUpdated = { [weak self] in
             self?.loading.stopAnimating()
             self?.hideErrorState()
+                self?.loading.stopAnimating()
+                self?.hideErrorState()
                 self?.tableView.reloadData()
             self?.emptyLabel.isHidden = !(self?.viewModel.users.isEmpty ?? true)
         }
