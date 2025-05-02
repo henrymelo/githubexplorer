@@ -35,7 +35,7 @@ final class UserListViewModelTests: QuickSpec {
                 waitUntil { done in
                     viewModel.fetchUsers().done {
                         expect(viewModel.users.count).to(equal(1))
-                        expect(viewModel.users.first?.login).to(equal("mockuser"))
+                        expect(viewModel.users.first?.login).to(equal("user1"))
                         done()
                     }.catch { error in
                         fail("Should not fail: \(error)")
