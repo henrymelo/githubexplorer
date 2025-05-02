@@ -55,7 +55,7 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "Detalhes"
+        title = AppStrings.userDetailsTitle
         setupUI()
         bindViewModel()
         loadUserDetails()
@@ -76,14 +76,14 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
 
         let stack = UIStackView(arrangedSubviews: [nameLabel, bioLabel, followersLabel, followingLabel, tableView])
         stack.axis = .vertical
-        stack.spacing = 8
+        stack.spacing = LayoutConstants.compactSpacing
         stack.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(stack)
 
         NSLayoutConstraint.activate([
-            stack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
-            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            stack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: LayoutConstants.defaultSpacing),
+            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: LayoutConstants.defaultSpacing),
+            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -LayoutConstants.defaultSpacing),
             stack.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }

@@ -20,7 +20,7 @@ final class UserDetailUITests: XCTestCase {
             firstCell.tap()
 
             let errorLabel = app.staticTexts["Erro ao carregar detalhes do usuário."]
-            let retryButton = app.buttons["Tentar novamente"]
+            let retryButton = app.buttons[AppStrings.tryAgain]
 
             XCTAssertTrue(errorLabel.waitForExistence(timeout: 3))
             XCTAssertTrue(retryButton.exists)

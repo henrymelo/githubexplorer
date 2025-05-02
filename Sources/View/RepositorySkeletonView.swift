@@ -14,7 +14,7 @@ final class RepositorySkeletonView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .systemGray5
-        layer.cornerRadius = 8
+        layer.cornerRadius = LayoutConstants.compactSpacing
         clipsToBounds = true
         setupShimmer()
     }

@@ -30,17 +30,17 @@ class UserListViewController: UIViewController {
         label.text = "Nenhum usuário encontrado"
         label.textAlignment = .center
         label.textColor = .secondaryLabel
-        label.font = .systemFont(ofSize: 16)
+        label.font = .systemFont(ofSize: LayoutConstants.defaultSpacing)
         label.isHidden = true
         return label
     }()
 
     private let loadingLabel: UILabel = {
         let label = UILabel()
-        label.text = "Carregando..."
+        label.text = AppStrings.loadingMessage
         label.textAlignment = .center
         label.textColor = .secondaryLabel
-        label.font = .systemFont(ofSize: 16)
+        label.font = .systemFont(ofSize: LayoutConstants.defaultSpacing)
         return label
     }()
 
@@ -85,7 +85,7 @@ class UserListViewController: UIViewController {
         tableView.register(UserTableViewCell.self, forCellReuseIdentifier: UserTableViewCell.identifier)
         tableView.register(UserTableViewCell.self, forCellReuseIdentifier: UserTableViewCell.identifier)
 
-        SkeletonAppearance.default.multilineCornerRadius = 8
+        SkeletonAppearance.default.multilineCornerRadius = Int(LayoutConstants.compactSpacing)
         SkeletonAppearance.default.tintColor = UIColor.lightGray.withAlphaComponent(0.2)
         SkeletonAppearance.default.gradient = SkeletonGradient(baseColor: UIColor.lightGray.withAlphaComponent(0.2))
         title = "GitHubExplorer"

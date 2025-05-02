@@ -33,7 +33,7 @@ enum ErrorType {
         case .unauthorized:
             return "Você não tem permissão para acessar este conteúdo."
         case .unknown:
-            return "Não foi possível completar a ação. Por favor, tente novamente mais tarde."
+            return AppStrings.genericErrorMessage
         }
     }
 }
@@ -63,14 +63,14 @@ final class ErrorStateView: UIView {
     private func setup() {
         backgroundColor = .systemBackground
 
-        emojiLabel.font = UIFont.systemFont(ofSize: 72)
+        emojiLabel.font = UIFont.systemFont(ofSize: LayoutConstants.emojiFontSize)
         emojiLabel.textAlignment = .center
 
         messageLabel.textAlignment = .center
         messageLabel.numberOfLines = 0
-        messageLabel.font = .systemFont(ofSize: 16)
+        messageLabel.font = .systemFont(ofSize: LayoutConstants.defaultSpacing)
 
-        retryButton.setTitle("Tentar novamente", for: .normal)
+        retryButton.setTitle(AppStrings.tryAgain, for: .normal)
         retryButton.addTarget(self, action: #selector(retryTapped), for: .touchUpInside)
 
         addSubview(emojiLabel)
@@ -83,12 +83,12 @@ final class ErrorStateView: UIView {
         }
 
         messageLabel.snp.makeConstraints { make in
-            make.top.equalTo(emojiLabel.snp.bottom).offset(16)
+            make.top.equalTo(emojiLabel.snp.bottom).offset(LayoutConstants.defaultSpacing)
             make.left.right.equalToSuperview().inset(20)
         }
 
         retryButton.snp.makeConstraints { make in
-            make.top.equalTo(messageLabel.snp.bottom).offset(16)
+            make.top.equalTo(messageLabel.snp.bottom).offset(LayoutConstants.defaultSpacing)
             make.centerX.equalToSuperview()
         }
     }

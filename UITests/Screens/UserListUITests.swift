@@ -16,7 +16,7 @@ final class UserListUITests: XCTestCase {
         app.launch()
 
         let errorLabel = app.staticTexts["Erro ao carregar usuários."]
-        let retryButton = app.buttons["Tentar novamente"]
+        let retryButton = app.buttons[AppStrings.tryAgain]
 
         XCTAssertTrue(errorLabel.waitForExistence(timeout: 3))
         XCTAssertTrue(retryButton.exists)

@@ -34,7 +34,7 @@ final class UserRepositoryCell: UITableViewCell {
         contentView.backgroundColor = .clear
 
         container.backgroundColor = .secondarySystemGroupedBackground
-        container.layer.cornerRadius = 12
+        container.layer.cornerRadius = LayoutConstants.avatarCornerRadius
         container.layer.masksToBounds = true
 
         avatarImageView.contentMode = .scaleAspectFill
@@ -42,7 +42,7 @@ final class UserRepositoryCell: UITableViewCell {
         avatarImageView.layer.cornerRadius = 24
         avatarImageView.isUserInteractionEnabled = true
 
-        repoLabel.font = .systemFont(ofSize: 16, weight: .medium)
+        repoLabel.font = .systemFont(ofSize: LayoutConstants.defaultSpacing, weight: .medium)
         repoLabel.numberOfLines = 1
         repoLabel.isUserInteractionEnabled = true
 
@@ -53,18 +53,18 @@ final class UserRepositoryCell: UITableViewCell {
 
     private func setupConstraints() {
         container.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(8)
+            make.edges.equalToSuperview().inset(LayoutConstants.compactSpacing)
         }
 
         avatarImageView.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(12)
+            make.leading.equalToSuperview().offset(LayoutConstants.avatarCornerRadius)
             make.centerY.equalToSuperview()
             make.width.height.equalTo(48)
         }
 
         repoLabel.snp.makeConstraints { make in
-            make.leading.equalTo(avatarImageView.snp.trailing).offset(16)
-            make.trailing.equalToSuperview().inset(12)
+            make.leading.equalTo(avatarImageView.snp.trailing).offset(LayoutConstants.defaultSpacing)
+            make.trailing.equalToSuperview().inset(LayoutConstants.avatarCornerRadius)
             make.centerY.equalToSuperview()
         }
     }
