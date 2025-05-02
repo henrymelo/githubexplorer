@@ -20,11 +20,19 @@ jobs:
         xcode-version: '16.2'
 
     - name: Install CocoaPods
+      run: brew install cocoapods
+
+    - name: Install XcodeGen
+      run: brew install xcodegen
+
+    - name: Generate Xcode project
+      run: xcodegen
+
+    - name: Install pods
       run: pod install
 
     - name: Run SwiftLint
-      run: |
-        Pods/SwiftLint/swiftlint lint --config .swiftlint.yml
+      run: Pods/SwiftLint/swiftlint lint --config .swiftlint.yml
 
     - name: Run tests
       run: |
