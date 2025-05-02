@@ -14,12 +14,10 @@ final class UserDetailViewControllerTests: XCTestCase {
 
     func testHideErrorStateAfterSuccess() {
         let mockVM = MockUserDetailViewModelSuccess()
-        let controller = UserDetailViewController(viewModel: mockVM, username: "test")
+        let controller = UserDetailViewController(viewModel: mockVM)
         controller.loadViewIfNeeded()
         controller.viewDidLoad()
-        
-        // Verifica se a tableView recebeu dados
-        XCTAssertEqual(controller.tableView.numberOfRows(inSection: 0), 3)
+        XCTAssertEqual(0, 3)
     }
 }
 

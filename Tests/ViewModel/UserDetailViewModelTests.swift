@@ -5,29 +5,21 @@ import PromiseKit
 @testable import GitHubExplorer
 
 class MockGitHubService: GitHubServiceProtocol {
+    func fetchUsers(since: Int) -> PromiseKit.Promise<[GitHubExplorer.User]> {
+        return Promise.value([])
+    }
+    
     func fetchUsers() -> Promise<[User]> {
         return Promise.value([])
     }
 
     func fetchUserDetail(username: String) -> Promise<UserDetail> {
-        return .value(UserDetail(
-            name: "Mock User",
-            company: "Mock Inc.",
-            blog: "https://mock.blog",
-            location: "Internet",
-            email: "mock@mock.com",
-            bio: "This is a mock user."
-        ))
+        return .value(UserDetail(login: "tst", name: "tst", bio: "tst", followers: 1, following: 1, publicRepos: 1, company: "tst", location: "tst", avatarUrl: "tst"))
     }
 
     func fetchRepositories(for username: String) -> Promise<[Repository]> {
         return .value([
-            Repository(
-                id: 1,
-                name: "Repo1",
-                description: "Description",
-                stargazersCount: 42
-            )
+            Repository(name: "test", description: "", language: "", stargazersCount: 1, forksCount: 1, openIssuesCount: 1, updatedAt: "test", isPrivate: false, isArchived: false, htmlUrl: "http://www.test.com")
         ])
     }
 }

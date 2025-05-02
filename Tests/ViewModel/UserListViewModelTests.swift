@@ -21,15 +21,6 @@ final class MockGitHubServiceForList: GitHubServiceProtocol {
     }
 }
 
-    func fetchUserDetail(username: String) -> Promise<UserDetail> {
-        return .init(error: NSError(domain: "", code: 0))
-    }
-
-    func fetchRepositories(for username: String) -> Promise<[Repository]> {
-        return .init(error: NSError(domain: "", code: 0))
-    }
-}
-
 final class UserListViewModelTests: QuickSpec {
     override class func spec() {
         describe("UserListViewModel") {
