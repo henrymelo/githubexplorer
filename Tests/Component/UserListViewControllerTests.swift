@@ -23,13 +23,17 @@ final class UserListViewControllerTests: XCTestCase {
 }
 
 final class MockUserListViewModelSuccess: UserListViewModelProtocol {
-    var users: [User] = [User(id: 1, login: "test", avatarUrl: "")]
+    var users: [User] = [User(id: 1, login: "user1", avatarUrl: "https://example.com/avatar.png")]
     var onUsersUpdated: (() -> Void)?
     var onError: ((Error) -> Void)?
+    var hasMoreData: Bool { return false }
 
     func fetchUsers() {
         onUsersUpdated?()
     }
+
+    func fetchMoreUsersIfNeeded(currentIndex: Int) {}
+}
 
     func fetchMoreUsersIfNeeded(currentIndex: Int) {}
     var hasMoreData: Bool { return false }
