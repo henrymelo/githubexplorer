@@ -57,7 +57,7 @@ final class MockGitHubServiceForUITests: GitHubServiceProtocol {
                     stargazersCount: 10 + i,
                     forksCount: 5,
                     openIssuesCount: 1,
-                    updatedAt: "2023-12-01T00:00:00Z",
+                    updatedAt: "2023-LayoutConstants.avatarCornerRadius-01T00:00:00Z",
                     isPrivate: false,
                     isArchived: false,
                     htmlUrl: "https://github.com/\(username)/Repo\(i)"

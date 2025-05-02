@@ -9,9 +9,11 @@
 import SkeletonView
 import UIKit
 import SnapKit
+import SnapKit
 import PromiseKit
 
 class UserListViewController: UIViewController {
+    private let errorView = ErrorStateView()
     final private let appNameLabel: UILabel = {
         let label = UILabel()
         label.text = "GitHub\nExplorer"
@@ -28,17 +30,17 @@ class UserListViewController: UIViewController {
         label.text = "Nenhum usuário encontrado"
         label.textAlignment = .center
         label.textColor = .secondaryLabel
-        label.font = .systemFont(ofSize: 16)
+        label.font = .systemFont(ofSize: LayoutConstants.defaultSpacing)
         label.isHidden = true
         return label
     }()
 
     private let loadingLabel: UILabel = {
         let label = UILabel()
-        label.text = "Carregando..."
+        label.text = AppStrings.loadingMessage
         label.textAlignment = .center
         label.textColor = .secondaryLabel
-        label.font = .systemFont(ofSize: 16)
+        label.font = .systemFont(ofSize: LayoutConstants.defaultSpacing)
         return label
     }()
 
@@ -56,34 +58,36 @@ class UserListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    private func showErrorState(message: String, retryHandler: @escaping () -> Void) {
+        errorView.configure(type: .network, message: message)
+        errorView.onRetry = retryHandler
+        view.addSubview(errorView)
+        errorView.isHidden = false
+        view.bringSubviewToFront(errorView)
+        errorView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+
+    private func hideErrorState() {
+        errorView.isHidden = true
+    }
+
     override func viewDidLoad() {
+        super.viewDidLoad()
         view.addSubview(appNameLabel)
         NSLayoutConstraint.activate([
             appNameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             appNameLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
-
-        
-        
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UserTableViewCell.self, forCellReuseIdentifier: UserTableViewCell.identifier)
-        
-
         tableView.register(UserTableViewCell.self, forCellReuseIdentifier: UserTableViewCell.identifier)
-        
-        
-        
 
-        SkeletonAppearance.default.multilineCornerRadius = 8
+        SkeletonAppearance.default.multilineCornerRadius = Int(LayoutConstants.compactSpacing)
         SkeletonAppearance.default.tintColor = UIColor.lightGray.withAlphaComponent(0.2)
         SkeletonAppearance.default.gradient = SkeletonGradient(baseColor: UIColor.lightGray.withAlphaComponent(0.2))
-
-        // Se houver avatar em células customizadas, configure a view do avatar:
-        // avatarImageView.isSkeletonable = true
-        // avatarImageView.skeletonCornerRadius = .circle
-
-        super.viewDidLoad()
         title = "GitHubExplorer"
         view.backgroundColor = .systemBackground
 
@@ -135,7 +139,10 @@ class UserListViewController: UIViewController {
     private func bindViewModel() {
         viewModel.onUsersUpdated = { [weak self] in
             self?.loading.stopAnimating()
-            self?.tableView.reloadData()
+            self?.hideErrorState()
+                self?.loading.stopAnimating()
+                self?.hideErrorState()
+                self?.tableView.reloadData()
             self?.emptyLabel.isHidden = !(self?.viewModel.users.isEmpty ?? true)
         }
     }
@@ -143,7 +150,9 @@ class UserListViewController: UIViewController {
     private func fetchUsers() {
         loading.startAnimating()
         viewModel.fetchUsers().catch { error in
-            print("Erro ao buscar usuários: \(error)")
+            self.showErrorState(message: "Não foi possível carregar a lista de usuários do GitHub. Verifique a conexão ou tente novamente mais tarde.") {
+                self.fetchUsers()
+            }
             self.loading.stopAnimating()
         }
     }

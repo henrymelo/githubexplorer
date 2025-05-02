@@ -28,14 +28,14 @@ PODS:
   - SwiftLint (0.59.1)
 
 DEPENDENCIES:
-  - Alamofire
-  - AlamofireImage
-  - Nimble
-  - PromiseKit (~> 8.2)
-  - Quick
-  - SkeletonView
-  - SnapKit
-  - SwiftLint
+  - Alamofire (~> 5.10.2)
+  - AlamofireImage (~> 4.3.0)
+  - Nimble (~> 13.7.1)
+  - PromiseKit (~> 8.2.0)
+  - Quick (~> 7.6.2)
+  - SkeletonView (~> 1.30.4)
+  - SnapKit (~> 5.7.1)
+  - SwiftLint (~> 0.59.1)
 
 SPEC REPOS:
   trunk:
@@ -68,6 +68,6 @@ SPEC CHECKSUMS:
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
   SwiftLint: 3d48e2fb2a3468fdaccf049e5e755df22fb40c2c
 
-PODFILE CHECKSUM: 447de8a6ebc5b36ba6b7e92ece3727cd42bb8d7b
+PODFILE CHECKSUM: bdfb33bc38275fe12f8e7d3b3c9ed022008acd2d
 
 COCOAPODS: 1.16.2

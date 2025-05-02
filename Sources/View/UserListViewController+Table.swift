@@ -10,7 +10,7 @@ import UIKit
 
 extension UserListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 72
+        return LayoutConstants.emojiFontSize
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

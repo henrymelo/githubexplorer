@@ -29,3 +29,36 @@ targets:
       - path: UITests
     dependencies:
       - target: GitHubExplorer
+
+
+schemes:
+  GitHubExplorer:
+    build:
+      targets:
+        GitHubExplorer: [all]
+    test:
+      targets:
+        - GitHubExplorerTests
+        - GitHubExplorerUITests
+    run:
+      config: Debug
+
+  GitHubExplorerTests:
+    build:
+      targets:
+        GitHubExplorerTests: [all]
+    test:
+      targets:
+        - GitHubExplorerTests
+    run:
+      config: Debug
+
+  GitHubExplorerUITests:
+    build:
+      targets:
+        GitHubExplorerUITests: [all]
+    test:
+      targets:
+        - GitHubExplorerUITests
+    run:
+      config: Debug
