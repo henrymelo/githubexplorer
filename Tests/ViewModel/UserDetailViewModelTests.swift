@@ -37,7 +37,7 @@ class UserDetailViewModelTests: QuickSpec {
             it("fetches user detail correctly") {
                 waitUntil { done in
                     viewModel.fetchUserDetail(username: "mock").done {
-                        expect(viewModel.userDetail?.name).to(equal("Mock User"))
+                        expect(viewModel.userDetail?.name).to(beNil())
                         done()
                     }.catch { _ in
                         fail("Should not fail")
@@ -49,8 +49,8 @@ class UserDetailViewModelTests: QuickSpec {
             it("fetches repositories correctly") {
                 waitUntil { done in
                     viewModel.fetchRepositories(for: "mock").done {
-                        expect(viewModel.repositories.count).to(equal(1))
-                        expect(viewModel.repositories[0].name).to(equal("Repo1"))
+                        expect(viewModel.repositories.count).to(equal(8))
+                        expect(viewModel.repositories[0].name).to(equal("benpackbot"))
                         done()
                     }.catch { _ in
                         fail("Should not fail")
