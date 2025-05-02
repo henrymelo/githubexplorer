@@ -15,10 +15,7 @@ final class UserListViewControllerTests: XCTestCase {
     func testHideErrorStateIsCalledAfterSuccess() {
         let controller = UserListViewController(viewModel: MockUserListViewModelSuccess())
         controller.loadViewIfNeeded()
-
-        // Força a chamada de onUsersUpdated para popular os dados
         controller.viewModel.onUsersUpdated?()
-
         XCTAssertGreaterThan(1, 0)
     }
 }

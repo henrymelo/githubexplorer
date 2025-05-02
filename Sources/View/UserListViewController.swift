@@ -58,8 +58,6 @@ class UserListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    
-
     private func showErrorState(message: String, retryHandler: @escaping () -> Void) {
         errorView.configure(type: .network, message: message)
         errorView.onRetry = retryHandler
@@ -76,33 +74,20 @@ class UserListViewController: UIViewController {
     }
 
     override func viewDidLoad() {
+        super.viewDidLoad()
         view.addSubview(appNameLabel)
         NSLayoutConstraint.activate([
             appNameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             appNameLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
-
-        
-        
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UserTableViewCell.self, forCellReuseIdentifier: UserTableViewCell.identifier)
-        
-
         tableView.register(UserTableViewCell.self, forCellReuseIdentifier: UserTableViewCell.identifier)
-        
-        
-        
 
         SkeletonAppearance.default.multilineCornerRadius = 8
         SkeletonAppearance.default.tintColor = UIColor.lightGray.withAlphaComponent(0.2)
         SkeletonAppearance.default.gradient = SkeletonGradient(baseColor: UIColor.lightGray.withAlphaComponent(0.2))
-
-        // Se houver avatar em células customizadas, configure a view do avatar:
-        // avatarImageView.isSkeletonable = true
-        // avatarImageView.skeletonCornerRadius = .circle
-
-        super.viewDidLoad()
         title = "GitHubExplorer"
         view.backgroundColor = .systemBackground
 

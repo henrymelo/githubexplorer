@@ -35,8 +35,6 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
         fatalError("init(coder:) has not been implemented")
     }
 
-    
-
     private func showErrorState(message: String, retryHandler: @escaping () -> Void) {
         errorView.configure(type: .network, message: message)
         errorView.onRetry = retryHandler
