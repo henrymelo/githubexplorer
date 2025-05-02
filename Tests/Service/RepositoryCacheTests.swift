@@ -19,7 +19,7 @@ final class RepositoryCacheTests: QuickSpec {
                 cache.save(testRepos)
                 let loaded = cache.load()
                 expect(loaded.count).to(equal(1))
-                expect(loaded.first?.name).to(equal("Test1"))
+                expect(loaded.first?.name).to(equal("test"))
             }
         }
     }

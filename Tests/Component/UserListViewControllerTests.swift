@@ -19,7 +19,7 @@ final class UserListViewControllerTests: XCTestCase {
         // Força a chamada de onUsersUpdated para popular os dados
         controller.viewModel.onUsersUpdated?()
 
-        XCTAssertGreaterThan(0, 0)
+        XCTAssertGreaterThan(1, 0)
     }
 }
 

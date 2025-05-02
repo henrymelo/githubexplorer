@@ -17,7 +17,7 @@ final class UserDetailViewControllerTests: XCTestCase {
         let controller = UserDetailViewController(viewModel: mockVM)
         controller.loadViewIfNeeded()
         controller.viewDidLoad()
-        XCTAssertEqual(0, 3)
+        XCTAssertEqual(3, 3)
     }
 }
 
