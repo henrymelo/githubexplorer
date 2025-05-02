@@ -38,6 +38,7 @@
 		084C94366328973D4A11E41B0E0355D7 /* SkeletonReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB9DED69301CD892A2FEFE8376C6B90 /* SkeletonReusableCell.swift */; };
 		09E1F569A93FAD4B9149E30B9301F44A /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1054F1CDE39695587F6E87A4853B5C0D /* ConstraintPriority.swift */; };
 		0B5EBFFD65B4C6D15680ACB7941B0B49 /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B21EFC0D65A3D5CA43A4C80835605C /* after.m */; };
+		0C0092F7B66E18DE559846E5A3A26179 /* Pods-GitHubExplorerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A8F83DCD2A91249A435A22FC78524 /* Pods-GitHubExplorerUITests-dummy.m */; };
 		0C229A4D0F6F8BA5B4C8126A0D6DFC43 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C01C6377127346E6F941DE6F15872AFE /* PromiseKit-dummy.m */; };
 		0C8364F37663A5CAB9FC415A0121E315 /* SkeletonTreeNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5AF049EED6DC4F69491179F9EB41E4 /* SkeletonTreeNode+Extensions.swift */; };
 		0CA7A132ABE7018DE9295456732F38BB /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA63BE8B42330135601EE16939D76C18 /* ConstraintAttributes.swift */; };
@@ -93,7 +94,6 @@
 		2DF6F69B6A9252A82A39468CF4AC8895 /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8AC60D8B09FF39010B422268B6BDC0 /* race.swift */; };
 		2DFE8C3BEF123199F7FB4700B607A032 /* SkeletonTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F61E8E540BF9BAABE5CA27C4177C3C /* SkeletonTreeNode.swift */; };
 		2F40D27F39EF50A87195CA7AF2B91334 /* CwlMachBadInstructionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CFF45A4C5653E0B14CD53A0D83196 /* CwlMachBadInstructionHandler.m */; };
-		2F9E93ADB589CB0CA55696B221F0A4A0 /* Pods-GitHubExplorerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A8F83DCD2A91249A435A22FC78524 /* Pods-GitHubExplorerUITests-dummy.m */; };
 		30939D360BFC744F1811E2A71E5D13BA /* ContainElementSatisfying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7B26615CFB86BD98C3C8794139FA0 /* ContainElementSatisfying.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		312EF9A6A9A471AAD22D3945409C106E /* UICollectionView+CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6A768C5D23EF10B4E7A2342315D19C /* UICollectionView+CollectionSkeleton.swift */; };
 		31D60F7BE4D0278699ED39C5CCF6883A /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D98DC41AF55FC326E053652AC36B39 /* AssociationPolicy.swift */; };
@@ -109,13 +109,11 @@
 		35F34BC004C024266675006F6744A2DB /* Equal+TupleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA48498115D0EC610F3F7176E20120B /* Equal+TupleArray.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		361147A100089BDDBE9784B954EA64F5 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81A2ACDDFBC100DD09459436442365 /* DispatchQueue+Extensions.swift */; };
 		363C9FC9F64672CC9D4C7941ADB74BDE /* UIView+SKExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9142856D5575715EE3AAF2601E16005 /* UIView+SKExtensions.swift */; };
-		37C15AF7F68C13CFC2D117AA6B30581F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3145B969116AEE2C9797340ECFF9399B /* Foundation.framework */; };
 		37FD09C1B0F8E50E3868031C98DA2D52 /* UITableView+CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7D84CCBFD718FAD1EFFC1975BCB46 /* UITableView+CollectionSkeleton.swift */; };
 		392023A2A408A948ECF0BC6E95CD5623 /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0D1D6BA3D116A247F718B93CDE014 /* UIImage+AlamofireImage.swift */; };
 		39D449220194AE1CD884069FBF6F735D /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B51B66321AB860F0486A9AE3A3AA2C /* URLSessionConfiguration+Alamofire.swift */; };
 		39EAF85956AFEEA237C7D8133E79BF16 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C14AD38E34D46F50E5C70C16A89D8 /* Notification+Extensions.swift */; };
 		3A1DBA4ADBE219BF4147817872B00918 /* GradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7CCB42D22A1DF9DAE4AE9B8FBAE36A /* GradientDirection.swift */; };
-		3A353AD50E284249EFDA40FC0C91F2E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3145B969116AEE2C9797340ECFF9399B /* Foundation.framework */; };
 		3B9D71C228241D63CED0C6B072E4D97B /* NMBExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76E11073C4DC08256E9C693979D9F42 /* NMBExpectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		3BCAE7843A2516EBA64768CC0CD79988 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AFADB22F88FD132F85A9384195221 /* ParameterEncoder.swift */; };
 		3C298F9D9EF861E82A79FDA9ECD161C4 /* mach_excServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FD68C1D79EA6DA8A935AA4EEDAB7B /* mach_excServer.c */; };
@@ -149,7 +147,6 @@
 		492AD3A7B6A3A65AAFD8A49699BF3989 /* UIView+AssociatedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7A91E34E0247C67C5483D8F7F539B /* UIView+AssociatedObjects.swift */; };
 		499E5F5EACE1472C34B3E539575CECFE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D78D5A3364F1C7CB4C09A0E0997462 /* UIView+Extensions.swift */; };
 		49B4BD0D72831D84A032329D929C7975 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C284BCADB48B1A1513E953AEF963498F /* Image.swift */; };
-		49DEA3DF221031FBC2AC90270289EF69 /* Pods-GitHubExplorerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55591A4432EE289449F833FE30FD9564 /* Pods-GitHubExplorerTests-dummy.m */; };
 		4A1CC2520A9CE0BC5B08D009780D2B8A /* NSURLSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E45277F2D51E36420525CA083439DBA /* NSURLSession+AnyPromise.m */; };
 		4A5647A85C00D91A4B89D0F56519148C /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3C46FF136A1815369788A6C53BAEAC /* RaisesException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		4BA98FCF503383D6809CFE228001445A /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA007078E24E050EEF5DDA06457D8EA /* QuickSelectedTestSuiteBuilder.swift */; };
@@ -194,7 +191,6 @@
 		66F024DCBE9C5AE50FD48FE6876D5DEB /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3513C6CB7D5E229A9D852229F81F4A05 /* ResponseSerialization.swift */; };
 		6714DB6F86C0CEE0FBF4FFD7627F4410 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98099EF947F6F0C0236269FCB37A9557 /* UITableView+Extensions.swift */; };
 		6865D6BC3AB6FE7C9F1B551C9BD1BA4A /* SkeletonTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F61E8E540BF9BAABE5CA27C4177C3C /* SkeletonTreeNode.swift */; };
-		6881C1827771649CA743267F07429459 /* Pods-GitHubExplorerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C5DF954679DB8938F8FA6DC77C69BC /* Pods-GitHubExplorerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68C983B4C1D8D7DD93576EBC1AA9DA92 /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DAAFA88B3D0FB7F25B0FFDC1D5B04DD /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68D5333B0D68BDDD85084154B1E03F74 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1747D3B11656444DBA341BE795187757 /* Contain.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		6B6663947381FFBBFE357E4134197C10 /* CwlMachBadInstructionHandler-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F97EF1227EE76D96582F4F3AB850E013 /* CwlMachBadInstructionHandler-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -236,6 +232,7 @@
 		7AAF0313FC5ABE250200E5306EB33F4D /* UIView+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E071E0BA3EF4083EFAE936AEACCE4B /* UIView+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AB3C275540B6F88DE4FEEBC5A76A80C /* GradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7CCB42D22A1DF9DAE4AE9B8FBAE36A /* GradientDirection.swift */; };
 		7AF516B98D45391B909D507D0244104C /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16BAACC46CCC55B79F65AE0E7B006A /* ConstraintDescription.swift */; };
+		7B128E7B4B05C920C31FD471EE14AA66 /* Pods-GitHubExplorerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C4B08901B8C4CD312172A48BA988E5 /* Pods-GitHubExplorerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CB7FA830D8934BF67B4FAE470A9CF05 /* UIView+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96AFF7D3C7F059EDD76A0FCE3B0841B /* UIView+Transitions.swift */; };
 		7D42390CDB4FA147504B03DA2A174A0C /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57C9DD102428A869F41BC4AADADA89 /* ConstraintViewDSL.swift */; };
 		7DC45887A81B1285456E8B98A711BA8B /* DSL+Require.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F68DC16AE1476211AC12ACCEDA5F2F /* DSL+Require.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -315,7 +312,6 @@
 		A58654E62E4EAB6B573F5346F1A2C89C /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8683BBDA1D91745290AE2F90D2A0589 /* ImageDownloader.swift */; };
 		A698A792F293BA997FE75C70CD18B022 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B55F68EF109CE73D9487C16C8388FD6 /* OperationQueue+Alamofire.swift */; };
 		A6F4A9FC2A363A84D38BE37490F8AC84 /* SkeletonTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56428F58750DBB69241DF8F5D963F2B /* SkeletonTransitionStyle.swift */; };
-		A72433C9F5512D0AA4069909391FC00F /* Pods-GitHubExplorerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C4B08901B8C4CD312172A48BA988E5 /* Pods-GitHubExplorerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A72E6EC24DCAE0BF3B0FCA5B51CA76AD /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE61C2676C00D5DE7F3BF7899ED54FE /* DSL+Wait.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		A7E2198EB7070BEE958C9CB2C1915D37 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D8600F10093DD749A67261AC0C0035 /* BeginWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		A8437EFD962B3A3F812B756C76ADD87B /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60087E5EAED5BC45D1AB80A84331825A /* HTTPMethod.swift */; };
@@ -345,8 +341,10 @@
 		B32BC6D67438172D5B58955EAB85D802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3145B969116AEE2C9797340ECFF9399B /* Foundation.framework */; };
 		B37F434F9CCF04D860D12264DF29FF75 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5080F5DC154F968512C85B826B2260 /* ImageCache.swift */; };
 		B3EC2DE8A5B6FAF5ED30071E4A3D9BE7 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7714BBD83715E018A4EE183D30DF4 /* DataRequest.swift */; };
+		B733261D4FE34C6E6B8D30535606DA9D /* Pods-GitHubExplorerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C5DF954679DB8938F8FA6DC77C69BC /* Pods-GitHubExplorerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B903049E7C1BED7918DAB208754107C7 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84009E66BB41AC174BD1C491AC61811 /* ConstraintMakerFinalizable.swift */; };
 		B93BAD2E896082F2A23A6B2EA8E7165F /* UIView+SKExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9142856D5575715EE3AAF2601E16005 /* UIView+SKExtensions.swift */; };
+		B997D9209356BB315A44A920ABF68D5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3145B969116AEE2C9797340ECFF9399B /* Foundation.framework */; };
 		BA2FB695DEB0D179253EEB8DFCE3578B /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA937F6E996D2C71AF4501540CE5974 /* SnapKit-dummy.m */; };
 		BA533EFB2917A33FCA35CF7E320D2594 /* SkeletonCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DBB43C21029980937F16F77393B573 /* SkeletonCollectionDelegate.swift */; };
 		BAC2EE92D88D513954C27B50DD716405 /* UIView+SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CA88FA586C78B353CCC11286542B8 /* UIView+SkeletonView.swift */; };
@@ -390,10 +388,12 @@
 		CCCCAEB50387A65EBA84B25E52E77D29 /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = 07EAFE24F4D34409A8D1666AF6AF00C6 /* fwd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD4D71FFD2402A007E0DBDD27E0F944C /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA4C88AA76EAEFF36F1DE171FA39141 /* Request+AlamofireImage.swift */; };
 		CDF42ED6AF2C0252840DF2A724375380 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1B1449A01BC6C2CCA03B096A60DD3 /* SessionDelegate.swift */; };
+		CE364A1E3FA44E0D32395B414D413ED6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3145B969116AEE2C9797340ECFF9399B /* Foundation.framework */; };
 		CE593943A9E7CF83822CF60304BCAD43 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F74FA2BA9F83F0EB2E804164DEE833 /* ConstraintConstantTarget.swift */; };
 		CECA8162BFE05143ECD1DE4225B82B9C /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDACDBA5C88DF4E00C4A718C62D175B9 /* CachedResponseHandler.swift */; };
 		CFD84F462AE6F1C68D513C04E6CDF711 /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02375D8398D322E0FAA5EE060CB5A /* NSObject+Promise.swift */; };
 		CFDB27ACA68B4C18C6DC1E51998D7623 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92137C45FC4589E74A0D8F2CAB1B95 /* HTTPHeaders.swift */; };
+		D0A5B5C578723DDBF20D5A2A9B4F1EF2 /* Pods-GitHubExplorerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55591A4432EE289449F833FE30FD9564 /* Pods-GitHubExplorerTests-dummy.m */; };
 		D14FEB8F210B0538BC6E76515E8882B3 /* SkeletonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE66C9B7C39958E064667944DBD95CA5 /* SkeletonType.swift */; };
 		D1BE806BEC87173E3064E1A2B7635AA9 /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C01A22C345AEF8F4360906700F355CF /* LogEvent.swift */; };
 		D225490E2323846EAD5BEB709B10E325 /* QuickTestObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694E9038172FBF417C92F964B3477CD5 /* QuickTestObservation.swift */; };
@@ -480,7 +480,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		068E4C930F3DA8A25059E10137AEB107 /* PBXContainerItemProxy */ = {
+		027EB5BF832133EF9DA4E4172B051B7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -494,19 +494,19 @@
 			remoteGlobalIDString = 976126A1CE06DC6E162563800E1BDF14;
 			remoteInfo = "Alamofire-Alamofire";
 		};
-		0E2A438FBD914442090951A1A6F7E6C4 /* PBXContainerItemProxy */ = {
+		0D2AA728653E959BC1979620F9834300 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EB8B23AD889CF5BE4A85CD0D8EF2DF99;
 			remoteInfo = CwlPosixPreconditionTesting;
 		};
-		1BBEB1A29D5E03F1EF90A6B7CA3230EF /* PBXContainerItemProxy */ = {
+		1E8B35B6EA12FF9CC930B4D1B14F06AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 308B5C440C446909122081D367A27A8F;
-			remoteInfo = CwlCatchException;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
 		};
 		241A8D673D95DBBE5CF701B3229AFEE6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -515,13 +515,6 @@
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
-		2445958DB32915F2D05572002981FB90 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F13695E06195A78EA8A95F8C7ED0D2F;
-			remoteInfo = Nimble;
-		};
 		263897DD67C8FB93A44684FD438A0649 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -529,26 +522,26 @@
 			remoteGlobalIDString = 6E5F3830AE76F7B54C15EF7A594438FA;
 			remoteInfo = "SkeletonView-framework";
 		};
-		2A66DFAA718BE1099C2DA879CEA0886F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CA3D99499260B4C146BBB22670C1D8AD;
-			remoteInfo = CwlCatchExceptionSupport;
-		};
-		34C18E1E2BC07D57E88AE0EFD1793BE3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3BBD87E27EAD36B90D168213ED6DC32C;
-			remoteInfo = CwlMachBadInstructionHandler;
-		};
-		4895A2AC2495EDB2F6042EB6B1912152 /* PBXContainerItemProxy */ = {
+		270889E2D8964D7A8F1D8D5A38D327CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E4D853F6FBAB5A9BDBE843E4EFB22EB7;
 			remoteInfo = CwlPreconditionTesting;
+		};
+		3FA29C1678661990A595DCE0698BFAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C82891EAB7293DBEE916B21F57E8474D;
+			remoteInfo = Quick;
+		};
+		4693954A2E63C7468E9F544E279D0C46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C82891EAB7293DBEE916B21F57E8474D;
+			remoteInfo = Quick;
 		};
 		4947216ED78A16B3FB3D94AC756AF91B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -557,12 +550,26 @@
 			remoteGlobalIDString = CA3D99499260B4C146BBB22670C1D8AD;
 			remoteInfo = CwlCatchExceptionSupport;
 		};
-		55177EEB1E727FFFDB41279966067E9A /* PBXContainerItemProxy */ = {
+		54C367704996BAF0F0DC2A131158CDE4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C82891EAB7293DBEE916B21F57E8474D;
-			remoteInfo = Quick;
+			remoteGlobalIDString = 6F13695E06195A78EA8A95F8C7ED0D2F;
+			remoteInfo = Nimble;
+		};
+		55894D85697964B253B1C7136EF0DFB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA3D99499260B4C146BBB22670C1D8AD;
+			remoteInfo = CwlCatchExceptionSupport;
+		};
+		55CA0D6809E6C39C6F2D8CEF7513CB33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 308B5C440C446909122081D367A27A8F;
+			remoteInfo = CwlCatchException;
 		};
 		56E0D1C00D11AB9108DF026055196DB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -578,12 +585,12 @@
 			remoteGlobalIDString = 3BBD87E27EAD36B90D168213ED6DC32C;
 			remoteInfo = CwlMachBadInstructionHandler;
 		};
-		6BB8A0B73B62342AC5B1D62CD1EAB885 /* PBXContainerItemProxy */ = {
+		710742E256417F007836D6A09C00C204 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 308B5C440C446909122081D367A27A8F;
-			remoteInfo = CwlCatchException;
+			remoteGlobalIDString = 9B8BCFB9D687CF52ADAE9BEC90BD217F;
+			remoteInfo = "Pods-GitHubExplorer";
 		};
 		8CDF09C3FBE03D1911F515D0B910A89F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -592,12 +599,12 @@
 			remoteGlobalIDString = E4D853F6FBAB5A9BDBE843E4EFB22EB7;
 			remoteInfo = CwlPreconditionTesting;
 		};
-		9CC0BBCAFCCC04108C6A235D9EEED111 /* PBXContainerItemProxy */ = {
+		9D55C4B28BE77CACC84E40E97D4E3934 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B8BCFB9D687CF52ADAE9BEC90BD217F;
-			remoteInfo = "Pods-GitHubExplorer";
+			remoteGlobalIDString = 3BBD87E27EAD36B90D168213ED6DC32C;
+			remoteInfo = CwlMachBadInstructionHandler;
 		};
 		9EAEDF93291AA827EBD90A165F1A84A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -606,19 +613,33 @@
 			remoteGlobalIDString = 0A9F5B8B51450C3E9069D051D1FA25BE;
 			remoteInfo = "PromiseKit-PromiseKit_Privacy";
 		};
-		A02AE362E5302ED9867A589E324093AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B8BCFB9D687CF52ADAE9BEC90BD217F;
-			remoteInfo = "Pods-GitHubExplorer";
-		};
 		A14D818B7EFAF914A70689876A9279FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8A8DB685241263AFDF5E6B20FE67B93A;
 			remoteInfo = "SnapKit-SnapKit_Privacy";
+		};
+		A58F407A091EF0CA411FF9FD64F28032 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA3D99499260B4C146BBB22670C1D8AD;
+			remoteInfo = CwlCatchExceptionSupport;
+		};
+		A6BDDA780B183D7072F2DACDBC7F4685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BBD87E27EAD36B90D168213ED6DC32C;
+			remoteInfo = CwlMachBadInstructionHandler;
+		};
+		AB2901B786F402407F5583ED3DBDFDF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F13695E06195A78EA8A95F8C7ED0D2F;
+			remoteInfo = Nimble;
 		};
 		AB56C0E73F76114E189AA5645ED1D7B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -641,26 +662,33 @@
 			remoteGlobalIDString = 3E064FCAB631C681990F7B25DB76F0D5;
 			remoteInfo = "SwiftLint-framework";
 		};
+		B962E98BF402F2349F6712EEF9A3D2E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB8B23AD889CF5BE4A85CD0D8EF2DF99;
+			remoteInfo = CwlPosixPreconditionTesting;
+		};
+		BBAC63318DA62E317E0457B625894477 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		BC6175E1103282CB8594B0F78EC686A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B8BCFB9D687CF52ADAE9BEC90BD217F;
+			remoteInfo = "Pods-GitHubExplorer";
+		};
 		C35C1163603D4F77DF8D95392BD94F33 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 308B5C440C446909122081D367A27A8F;
 			remoteInfo = CwlCatchException;
-		};
-		D863C71E26A3AF9F38D6A1F2EF77E07E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C82891EAB7293DBEE916B21F57E8474D;
-			remoteInfo = Quick;
-		};
-		DACFA9169F7BDEDC6E7B396FAB4B090F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CA3D99499260B4C146BBB22670C1D8AD;
-			remoteInfo = CwlCatchExceptionSupport;
 		};
 		DB08E168666279C9FDC47E2BD41D9FA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -669,12 +697,12 @@
 			remoteGlobalIDString = 7C579CE66A1E7A9AA33CA5F97F9C22C5;
 			remoteInfo = PromiseKit;
 		};
-		E6063828ADE25CAFB16E8A859A8AACBA /* PBXContainerItemProxy */ = {
+		DCDE593CF6B877D0A1A86DDDFC0184FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3BBD87E27EAD36B90D168213ED6DC32C;
-			remoteInfo = CwlMachBadInstructionHandler;
+			remoteGlobalIDString = 308B5C440C446909122081D367A27A8F;
+			remoteInfo = CwlCatchException;
 		};
 		EAFBDE6CF2D4FAB2E8BC637B0040D980 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -682,20 +710,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
 			remoteInfo = SnapKit;
-		};
-		EDF41FDEAFB14CC128B0F370599F849E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB8B23AD889CF5BE4A85CD0D8EF2DF99;
-			remoteInfo = CwlPosixPreconditionTesting;
-		};
-		FA3AD54549562F21D05FC9B54D053A0C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F13695E06195A78EA8A95F8C7ED0D2F;
-			remoteInfo = Nimble;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1243,14 +1257,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46A919C8108B4F5D20AD08DB692860DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				37C15AF7F68C13CFC2D117AA6B30581F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		560FB6E6B173D97F7060F16641CAA89B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1312,6 +1318,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B930E29299A043F04EA6F71D58D1F38F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B997D9209356BB315A44A920ABF68D5D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA6E36F8148398D8D4BF984D2A053776 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1329,11 +1343,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA10CDB7B5772907FEA94F78628BBFB0 /* Frameworks */ = {
+		ED372C3D8F2C01C15E0536AD5FF6B61E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A353AD50E284249EFDA40FC0C91F2E5 /* Foundation.framework in Frameworks */,
+				CE364A1E3FA44E0D32395B414D413ED6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2209,11 +2223,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F721781A13CADA23CAFD53FD0C29BD2 /* Headers */ = {
+		24F865B27887238BDECDE3BB338DDABF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6881C1827771649CA743267F07429459 /* Pods-GitHubExplorerTests-umbrella.h in Headers */,
+				B733261D4FE34C6E6B8D30535606DA9D /* Pods-GitHubExplorerTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2257,6 +2271,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59525274854177FC326EE9F8C0ECB8CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B128E7B4B05C920C31FD471EE14AA66 /* Pods-GitHubExplorerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B1500FE995B9224E0AF0B42CE93C03B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2278,14 +2300,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A2024BCE25A33C62313B1131A349D55 /* CwlPosixPreconditionTesting-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5892F33015CE0D3E8EDAF83EA89B79C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A72433C9F5512D0AA4069909391FC00F /* Pods-GitHubExplorerUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2466,24 +2480,25 @@
 		};
 		8892E1B55EEA524134630CD624F7B394 /* Pods-GitHubExplorerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 776DA3A168639B7BC2B07612D63C0C76 /* Build configuration list for PBXNativeTarget "Pods-GitHubExplorerTests" */;
+			buildConfigurationList = A596ED40E4D83D643CFCC3FE354CA572 /* Build configuration list for PBXNativeTarget "Pods-GitHubExplorerTests" */;
 			buildPhases = (
-				1F721781A13CADA23CAFD53FD0C29BD2 /* Headers */,
-				559E6096585299BE9E7FE139F21D9A66 /* Sources */,
-				46A919C8108B4F5D20AD08DB692860DF /* Frameworks */,
-				AEDC806643460831F5AE2B15FDE02692 /* Resources */,
+				24F865B27887238BDECDE3BB338DDABF /* Headers */,
+				2CCDB7B7EF68BB8509C990EC7A02F7AF /* Sources */,
+				ED372C3D8F2C01C15E0536AD5FF6B61E /* Frameworks */,
+				387F12979A84FD92621281D44B361FA0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C92D63B14C4A2761F8BE0C810EFE57C6 /* PBXTargetDependency */,
-				C95770FB788805E6921516EA966035DB /* PBXTargetDependency */,
-				ADC13E2C032869EB76AD6F1D692EFD82 /* PBXTargetDependency */,
-				6A4255BFE8C030A612BA4B6BC2591EFD /* PBXTargetDependency */,
-				4541551EBE70B5053C9B2D9F6FB60322 /* PBXTargetDependency */,
-				4E2446573AE3E54CE986D2908C6EE0EE /* PBXTargetDependency */,
-				79F7B5EED9E6A17535581CBDBFDF680B /* PBXTargetDependency */,
-				E94740A9B5641F1EDAFF87C5D51FCF88 /* PBXTargetDependency */,
+				5875BEA66C87200F46D83DB33D0DB5DC /* PBXTargetDependency */,
+				78932AEEBF2B96F26F98DB1ACBDE2D04 /* PBXTargetDependency */,
+				49939D4DA72C042CFF366894D8FFF393 /* PBXTargetDependency */,
+				AF16520A70AA984B2AFED522683900BD /* PBXTargetDependency */,
+				DCF815AD9B82D164B44F047BAB208E51 /* PBXTargetDependency */,
+				63220A29CFA45413CCF1B81F7D46B624 /* PBXTargetDependency */,
+				8C42CCE485E91A2A63ECC20C71839058 /* PBXTargetDependency */,
+				6CD09EAB41856E6C46B18AAF1950E90F /* PBXTargetDependency */,
+				EFB78FF71BE6FAF4629A48F41FB77E03 /* PBXTargetDependency */,
 			);
 			name = "Pods-GitHubExplorerTests";
 			productName = Pods_GitHubExplorerTests;
@@ -2509,24 +2524,25 @@
 		};
 		94CD69F218373F07E334CEF4E5C8CB08 /* Pods-GitHubExplorerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B074E85781F3DE3A64B398F67AE9BB2D /* Build configuration list for PBXNativeTarget "Pods-GitHubExplorerUITests" */;
+			buildConfigurationList = 71B70B95006A9C2D8DD1BEC766397486 /* Build configuration list for PBXNativeTarget "Pods-GitHubExplorerUITests" */;
 			buildPhases = (
-				A5892F33015CE0D3E8EDAF83EA89B79C /* Headers */,
-				69FA5A084929D55985602FB9E31DBD84 /* Sources */,
-				EA10CDB7B5772907FEA94F78628BBFB0 /* Frameworks */,
-				568EFB0EB4B56695F600194A9006050A /* Resources */,
+				59525274854177FC326EE9F8C0ECB8CC /* Headers */,
+				C5497EA61F44A012C39EB97E9CB9BEE2 /* Sources */,
+				B930E29299A043F04EA6F71D58D1F38F /* Frameworks */,
+				953336CAB6BB5F490E8B67B3ADBBE3B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8C4B4CD4CF57EA0B5B4FA309B9CB4066 /* PBXTargetDependency */,
-				C08A2EEFB97D237F99153FBDCE380D22 /* PBXTargetDependency */,
-				C9CAEEC48174EF3D2BB80CB469873E76 /* PBXTargetDependency */,
-				F65BF7A202B3F2F82696D7E2D0344F7C /* PBXTargetDependency */,
-				7B257BE8A6F5B9B3A2D48B37CA84C2B1 /* PBXTargetDependency */,
-				A1151EBC98CC1D415048C042C380025F /* PBXTargetDependency */,
-				F7804FB454F4916B6584B0A099F1B948 /* PBXTargetDependency */,
-				F9BF1AA21503375E9A75BAAA3F2497FA /* PBXTargetDependency */,
+				29E7F749518A6F24F412E7609D16154C /* PBXTargetDependency */,
+				02F81E048165B6A9839C83AAFEDD0E20 /* PBXTargetDependency */,
+				B2A8694EA905FF6E44ADCFECC9728514 /* PBXTargetDependency */,
+				147939FBE9DFAF3698891D187A5B5D43 /* PBXTargetDependency */,
+				894356B0D71D463DC3641DDF5C69E5F5 /* PBXTargetDependency */,
+				856E5CF3501B6CFFB4580F5D61CE8CFF /* PBXTargetDependency */,
+				E3A1B41C96BDE53236BE0621B83C0227 /* PBXTargetDependency */,
+				A439487878D7309BDE381C5EB302C225 /* PBXTargetDependency */,
+				5A9C5D489A93F7FA50A2638013C0400D /* PBXTargetDependency */,
 			);
 			name = "Pods-GitHubExplorerUITests";
 			productName = Pods_GitHubExplorerUITests;
@@ -2784,18 +2800,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		387F12979A84FD92621281D44B361FA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4899493C327B67308794365D259EF440 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A9761CB33152FEDC92E9A9C14340D836 /* PromiseKit-PromiseKit_Privacy in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		568EFB0EB4B56695F600194A9006050A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2821,14 +2837,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CD1C70DB4E4163403FB99C7BA7BCE53 /* Resources */ = {
+		953336CAB6BB5F490E8B67B3ADBBE3B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEDC806643460831F5AE2B15FDE02692 /* Resources */ = {
+		9CD1C70DB4E4163403FB99C7BA7BCE53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3025,6 +3041,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CCDB7B7EF68BB8509C990EC7A02F7AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A5B5C578723DDBF20D5A2A9B4F1EF2 /* Pods-GitHubExplorerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DCAC09CEFB1812861E6B7366F1F6230 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3201,27 +3225,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		559E6096585299BE9E7FE139F21D9A66 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49DEA3DF221031FBC2AC90270289EF69 /* Pods-GitHubExplorerTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5F2205E4EB2341D8BDACD67767E6EC00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F95DE37D46A1DAADEBD2AE635A1010EE /* Pods-GitHubExplorer-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		69FA5A084929D55985602FB9E31DBD84 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F9E93ADB589CB0CA55696B221F0A4A0 /* Pods-GitHubExplorerUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3317,6 +3325,14 @@
 				2F40D27F39EF50A87195CA7AF2B91334 /* CwlMachBadInstructionHandler.m in Sources */,
 				D6B4B3395CCDBB5CA8A0704D7FAA96BB /* CwlMachBadInstructionHandler-dummy.m in Sources */,
 				3C298F9D9EF861E82A79FDA9ECD161C4 /* mach_excServer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5497EA61F44A012C39EB97E9CB9BEE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0092F7B66E18DE559846E5A3A26179 /* Pods-GitHubExplorerUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3439,11 +3455,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		02F81E048165B6A9839C83AAFEDD0E20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CwlCatchExceptionSupport;
+			target = CA3D99499260B4C146BBB22670C1D8AD /* CwlCatchExceptionSupport */;
+			targetProxy = 55894D85697964B253B1C7136EF0DFB0 /* PBXContainerItemProxy */;
+		};
 		122F58AA87CB5C47625B6DD5AAD96A61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SnapKit-SnapKit_Privacy";
 			target = 8A8DB685241263AFDF5E6B20FE67B93A /* SnapKit-SnapKit_Privacy */;
 			targetProxy = A14D818B7EFAF914A70689876A9279FB /* PBXContainerItemProxy */;
+		};
+		147939FBE9DFAF3698891D187A5B5D43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CwlPosixPreconditionTesting;
+			target = EB8B23AD889CF5BE4A85CD0D8EF2DF99 /* CwlPosixPreconditionTesting */;
+			targetProxy = 0D2AA728653E959BC1979620F9834300 /* PBXContainerItemProxy */;
 		};
 		2363BCF13D84BF3E2EE8D4E32C80E0B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3451,23 +3479,23 @@
 			target = 976126A1CE06DC6E162563800E1BDF14 /* Alamofire-Alamofire */;
 			targetProxy = 07A1B5562D456173609AAF0410DFECD4 /* PBXContainerItemProxy */;
 		};
+		29E7F749518A6F24F412E7609D16154C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CwlCatchException;
+			target = 308B5C440C446909122081D367A27A8F /* CwlCatchException */;
+			targetProxy = 55CA0D6809E6C39C6F2D8CEF7513CB33 /* PBXContainerItemProxy */;
+		};
 		41C1F3FF09BB61FCF936BC8D1BE42405 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CwlCatchException;
 			target = 308B5C440C446909122081D367A27A8F /* CwlCatchException */;
 			targetProxy = C35C1163603D4F77DF8D95392BD94F33 /* PBXContainerItemProxy */;
 		};
-		4541551EBE70B5053C9B2D9F6FB60322 /* PBXTargetDependency */ = {
+		49939D4DA72C042CFF366894D8FFF393 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CwlPreconditionTesting;
-			target = E4D853F6FBAB5A9BDBE843E4EFB22EB7 /* CwlPreconditionTesting */;
-			targetProxy = 4895A2AC2495EDB2F6042EB6B1912152 /* PBXContainerItemProxy */;
-		};
-		4E2446573AE3E54CE986D2908C6EE0EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Nimble;
-			target = 6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */;
-			targetProxy = 2445958DB32915F2D05572002981FB90 /* PBXContainerItemProxy */;
+			name = CwlMachBadInstructionHandler;
+			target = 3BBD87E27EAD36B90D168213ED6DC32C /* CwlMachBadInstructionHandler */;
+			targetProxy = 9D55C4B28BE77CACC84E40E97D4E3934 /* PBXContainerItemProxy */;
 		};
 		51309032ADA1B239764AB5704F94D698 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3475,11 +3503,29 @@
 			target = 7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */;
 			targetProxy = DB08E168666279C9FDC47E2BD41D9FA7 /* PBXContainerItemProxy */;
 		};
-		6A4255BFE8C030A612BA4B6BC2591EFD /* PBXTargetDependency */ = {
+		5875BEA66C87200F46D83DB33D0DB5DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CwlPosixPreconditionTesting;
-			target = EB8B23AD889CF5BE4A85CD0D8EF2DF99 /* CwlPosixPreconditionTesting */;
-			targetProxy = EDF41FDEAFB14CC128B0F370599F849E /* PBXContainerItemProxy */;
+			name = CwlCatchException;
+			target = 308B5C440C446909122081D367A27A8F /* CwlCatchException */;
+			targetProxy = DCDE593CF6B877D0A1A86DDDFC0184FD /* PBXContainerItemProxy */;
+		};
+		5A9C5D489A93F7FA50A2638013C0400D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 1E8B35B6EA12FF9CC930B4D1B14F06AF /* PBXContainerItemProxy */;
+		};
+		63220A29CFA45413CCF1B81F7D46B624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Nimble;
+			target = 6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */;
+			targetProxy = 54C367704996BAF0F0DC2A131158CDE4 /* PBXContainerItemProxy */;
+		};
+		6CD09EAB41856E6C46B18AAF1950E90F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Quick;
+			target = C82891EAB7293DBEE916B21F57E8474D /* Quick */;
+			targetProxy = 4693954A2E63C7468E9F544E279D0C46 /* PBXContainerItemProxy */;
 		};
 		7168AF4C1DC97A9A8B8141C6570C226B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3493,17 +3539,11 @@
 			target = EB8B23AD889CF5BE4A85CD0D8EF2DF99 /* CwlPosixPreconditionTesting */;
 			targetProxy = AB56C0E73F76114E189AA5645ED1D7B4 /* PBXContainerItemProxy */;
 		};
-		79F7B5EED9E6A17535581CBDBFDF680B /* PBXTargetDependency */ = {
+		78932AEEBF2B96F26F98DB1ACBDE2D04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-GitHubExplorer";
-			target = 9B8BCFB9D687CF52ADAE9BEC90BD217F /* Pods-GitHubExplorer */;
-			targetProxy = 9CC0BBCAFCCC04108C6A235D9EEED111 /* PBXContainerItemProxy */;
-		};
-		7B257BE8A6F5B9B3A2D48B37CA84C2B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CwlPreconditionTesting;
-			target = E4D853F6FBAB5A9BDBE843E4EFB22EB7 /* CwlPreconditionTesting */;
-			targetProxy = 068E4C930F3DA8A25059E10137AEB107 /* PBXContainerItemProxy */;
+			name = CwlCatchExceptionSupport;
+			target = CA3D99499260B4C146BBB22670C1D8AD /* CwlCatchExceptionSupport */;
+			targetProxy = A58F407A091EF0CA411FF9FD64F28032 /* PBXContainerItemProxy */;
 		};
 		831F445E62DD99030AF276387569C888 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3511,11 +3551,23 @@
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
 			targetProxy = 241A8D673D95DBBE5CF701B3229AFEE6 /* PBXContainerItemProxy */;
 		};
-		8C4B4CD4CF57EA0B5B4FA309B9CB4066 /* PBXTargetDependency */ = {
+		856E5CF3501B6CFFB4580F5D61CE8CFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CwlCatchException;
-			target = 308B5C440C446909122081D367A27A8F /* CwlCatchException */;
-			targetProxy = 1BBEB1A29D5E03F1EF90A6B7CA3230EF /* PBXContainerItemProxy */;
+			name = Nimble;
+			target = 6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */;
+			targetProxy = AB2901B786F402407F5583ED3DBDFDF8 /* PBXContainerItemProxy */;
+		};
+		894356B0D71D463DC3641DDF5C69E5F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CwlPreconditionTesting;
+			target = E4D853F6FBAB5A9BDBE843E4EFB22EB7 /* CwlPreconditionTesting */;
+			targetProxy = 270889E2D8964D7A8F1D8D5A38D327CB /* PBXContainerItemProxy */;
+		};
+		8C42CCE485E91A2A63ECC20C71839058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GitHubExplorer";
+			target = 9B8BCFB9D687CF52ADAE9BEC90BD217F /* Pods-GitHubExplorer */;
+			targetProxy = 710742E256417F007836D6A09C00C204 /* PBXContainerItemProxy */;
 		};
 		9EDB03D54C6CF57CDC2E4398369A9707 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3523,11 +3575,11 @@
 			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
 			targetProxy = EAFBDE6CF2D4FAB2E8BC637B0040D980 /* PBXContainerItemProxy */;
 		};
-		A1151EBC98CC1D415048C042C380025F /* PBXTargetDependency */ = {
+		A439487878D7309BDE381C5EB302C225 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Nimble;
-			target = 6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */;
-			targetProxy = FA3AD54549562F21D05FC9B54D053A0C /* PBXContainerItemProxy */;
+			name = Quick;
+			target = C82891EAB7293DBEE916B21F57E8474D /* Quick */;
+			targetProxy = 3FA29C1678661990A595DCE0698BFAF6 /* PBXContainerItemProxy */;
 		};
 		ABB748CC652396B85E4500ECA7252917 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3535,11 +3587,17 @@
 			target = C9778AE8394BE451567650E0B239BA21 /* AlamofireImage */;
 			targetProxy = 56E0D1C00D11AB9108DF026055196DB5 /* PBXContainerItemProxy */;
 		};
-		ADC13E2C032869EB76AD6F1D692EFD82 /* PBXTargetDependency */ = {
+		AF16520A70AA984B2AFED522683900BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CwlPosixPreconditionTesting;
+			target = EB8B23AD889CF5BE4A85CD0D8EF2DF99 /* CwlPosixPreconditionTesting */;
+			targetProxy = B962E98BF402F2349F6712EEF9A3D2E0 /* PBXContainerItemProxy */;
+		};
+		B2A8694EA905FF6E44ADCFECC9728514 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CwlMachBadInstructionHandler;
 			target = 3BBD87E27EAD36B90D168213ED6DC32C /* CwlMachBadInstructionHandler */;
-			targetProxy = 34C18E1E2BC07D57E88AE0EFD1793BE3 /* PBXContainerItemProxy */;
+			targetProxy = A6BDDA780B183D7072F2DACDBC7F4685 /* PBXContainerItemProxy */;
 		};
 		C0054410292EAEE37C04DC337C2E48EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3547,41 +3605,23 @@
 			target = 3BBD87E27EAD36B90D168213ED6DC32C /* CwlMachBadInstructionHandler */;
 			targetProxy = 697B21B58CB06FD8AADFB0911BD7924D /* PBXContainerItemProxy */;
 		};
-		C08A2EEFB97D237F99153FBDCE380D22 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CwlCatchExceptionSupport;
-			target = CA3D99499260B4C146BBB22670C1D8AD /* CwlCatchExceptionSupport */;
-			targetProxy = DACFA9169F7BDEDC6E7B396FAB4B090F /* PBXContainerItemProxy */;
-		};
-		C92D63B14C4A2761F8BE0C810EFE57C6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CwlCatchException;
-			target = 308B5C440C446909122081D367A27A8F /* CwlCatchException */;
-			targetProxy = 6BB8A0B73B62342AC5B1D62CD1EAB885 /* PBXContainerItemProxy */;
-		};
-		C95770FB788805E6921516EA966035DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CwlCatchExceptionSupport;
-			target = CA3D99499260B4C146BBB22670C1D8AD /* CwlCatchExceptionSupport */;
-			targetProxy = 2A66DFAA718BE1099C2DA879CEA0886F /* PBXContainerItemProxy */;
-		};
-		C9CAEEC48174EF3D2BB80CB469873E76 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CwlMachBadInstructionHandler;
-			target = 3BBD87E27EAD36B90D168213ED6DC32C /* CwlMachBadInstructionHandler */;
-			targetProxy = E6063828ADE25CAFB16E8A859A8AACBA /* PBXContainerItemProxy */;
-		};
 		D4312F9409F473BDAD59882FBAC31688 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SkeletonView-framework";
 			target = 6E5F3830AE76F7B54C15EF7A594438FA /* SkeletonView-framework */;
 			targetProxy = 263897DD67C8FB93A44684FD438A0649 /* PBXContainerItemProxy */;
 		};
-		E94740A9B5641F1EDAFF87C5D51FCF88 /* PBXTargetDependency */ = {
+		DCF815AD9B82D164B44F047BAB208E51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Quick;
-			target = C82891EAB7293DBEE916B21F57E8474D /* Quick */;
-			targetProxy = 55177EEB1E727FFFDB41279966067E9A /* PBXContainerItemProxy */;
+			name = CwlPreconditionTesting;
+			target = E4D853F6FBAB5A9BDBE843E4EFB22EB7 /* CwlPreconditionTesting */;
+			targetProxy = 027EB5BF832133EF9DA4E4172B051B7C /* PBXContainerItemProxy */;
+		};
+		E3A1B41C96BDE53236BE0621B83C0227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GitHubExplorer";
+			target = 9B8BCFB9D687CF52ADAE9BEC90BD217F /* Pods-GitHubExplorer */;
+			targetProxy = BC6175E1103282CB8594B0F78EC686A6 /* PBXContainerItemProxy */;
 		};
 		EDDAA71E0BACA6547330B4D18B8F9AE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3595,17 +3635,17 @@
 			target = 3E064FCAB631C681990F7B25DB76F0D5 /* SwiftLint-framework */;
 			targetProxy = AF2CAAF260ADEA114DA5CE9A5800B4B0 /* PBXContainerItemProxy */;
 		};
+		EFB78FF71BE6FAF4629A48F41FB77E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = BBAC63318DA62E317E0457B625894477 /* PBXContainerItemProxy */;
+		};
 		F514A1D62CA16E8E0854FE2D81863C8B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "PromiseKit-PromiseKit_Privacy";
 			target = 0A9F5B8B51450C3E9069D051D1FA25BE /* PromiseKit-PromiseKit_Privacy */;
 			targetProxy = 9EAEDF93291AA827EBD90A165F1A84A0 /* PBXContainerItemProxy */;
-		};
-		F65BF7A202B3F2F82696D7E2D0344F7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CwlPosixPreconditionTesting;
-			target = EB8B23AD889CF5BE4A85CD0D8EF2DF99 /* CwlPosixPreconditionTesting */;
-			targetProxy = 0E2A438FBD914442090951A1A6F7E6C4 /* PBXContainerItemProxy */;
 		};
 		F7539B5A2B4050A41EE3929FC5FE5F21 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3613,21 +3653,88 @@
 			target = CA3D99499260B4C146BBB22670C1D8AD /* CwlCatchExceptionSupport */;
 			targetProxy = 4947216ED78A16B3FB3D94AC756AF91B /* PBXContainerItemProxy */;
 		};
-		F7804FB454F4916B6584B0A099F1B948 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-GitHubExplorer";
-			target = 9B8BCFB9D687CF52ADAE9BEC90BD217F /* Pods-GitHubExplorer */;
-			targetProxy = A02AE362E5302ED9867A589E324093AC /* PBXContainerItemProxy */;
-		};
-		F9BF1AA21503375E9A75BAAA3F2497FA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Quick;
-			target = C82891EAB7293DBEE916B21F57E8474D /* Quick */;
-			targetProxy = D863C71E26A3AF9F38D6A1F2EF77E07E /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		006968C6680CE4968252DF1769C78511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9C5E8CAE485A0CB8DB4F9EF893A133 /* Pods-GitHubExplorerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-GitHubExplorerUITests/Pods-GitHubExplorerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GitHubExplorerUITests/Pods-GitHubExplorerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		00EB8996C577B123453FE2F083DE5ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDAC82EF29B65BF74CDB004D6FCF18D3 /* Pods-GitHubExplorerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-GitHubExplorerUITests/Pods-GitHubExplorerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GitHubExplorerUITests/Pods-GitHubExplorerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		015095D0365CC7CBFE9C7E614B5AB6C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 85420DDACF0C561BF51F2ACDECE02388 /* Nimble.release.xcconfig */;
@@ -3830,46 +3937,6 @@
 			};
 			name = Release;
 		};
-		13D4E067127C5A3AA3638EC27326BD15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDAC82EF29B65BF74CDB004D6FCF18D3 /* Pods-GitHubExplorerUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-GitHubExplorerUITests/Pods-GitHubExplorerUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GitHubExplorerUITests/Pods-GitHubExplorerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		18687060739FB7953802DC2A125B84B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94678930166DFF96FD48AFE521F896AF /* CwlPreconditionTesting.release.xcconfig */;
@@ -4043,45 +4110,6 @@
 			};
 			name = Debug;
 		};
-		28A8076D1EAD688D8D3FBF8CBB5DB700 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C9C5E8CAE485A0CB8DB4F9EF893A133 /* Pods-GitHubExplorerUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-GitHubExplorerUITests/Pods-GitHubExplorerUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GitHubExplorerUITests/Pods-GitHubExplorerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		2D22CE291C81D12B715E84BAF30DE751 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A614DCDEA4F6BD4C360F04833E4B31D /* SwiftLint-framework.debug.xcconfig */;
@@ -4153,46 +4181,6 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		43B0DFEDDE7AECB623662A188EC4393D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 374737D581516CD945EBB3372F8E53AE /* Pods-GitHubExplorerTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-GitHubExplorerTests/Pods-GitHubExplorerTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GitHubExplorerTests/Pods-GitHubExplorerTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -4490,45 +4478,6 @@
 			};
 			name = Debug;
 		};
-		85011053E08FAFAB36E122DEA3AAB4BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7886530CAF37E920161EC255713555CA /* Pods-GitHubExplorerTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-GitHubExplorerTests/Pods-GitHubExplorerTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GitHubExplorerTests/Pods-GitHubExplorerTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		88255CC892F5BDA48B353AF8C09411E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CCA3C62D374161F8BD7BB627F1F8BFF5 /* Alamofire.release.xcconfig */;
@@ -4608,6 +4557,46 @@
 			};
 			name = Release;
 		};
+		9693D984BFB975963416A0EA8F1B184D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 374737D581516CD945EBB3372F8E53AE /* Pods-GitHubExplorerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-GitHubExplorerTests/Pods-GitHubExplorerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GitHubExplorerTests/Pods-GitHubExplorerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		993B9DB2AFC703EFD48BF2BD374577BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DDA9D65F341971434BF9B0BF59C6026E /* Quick.release.xcconfig */;
@@ -4680,6 +4669,45 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD94DBF89EF0F0850806361E50B468D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7886530CAF37E920161EC255713555CA /* Pods-GitHubExplorerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-GitHubExplorerTests/Pods-GitHubExplorerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GitHubExplorerTests/Pods-GitHubExplorerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -5256,20 +5284,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		71B70B95006A9C2D8DD1BEC766397486 /* Build configuration list for PBXNativeTarget "Pods-GitHubExplorerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006968C6680CE4968252DF1769C78511 /* Debug */,
+				00EB8996C577B123453FE2F083DE5ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		75F142A345784D4AE7E25B609F9D192E /* Build configuration list for PBXNativeTarget "SnapKit-SnapKit_Privacy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4DAED7A89E549E3DD56098B699DBC99 /* Debug */,
 				12DFC99F02F4532130DA83B67E0FAD6F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		776DA3A168639B7BC2B07612D63C0C76 /* Build configuration list for PBXNativeTarget "Pods-GitHubExplorerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				85011053E08FAFAB36E122DEA3AAB4BF /* Debug */,
-				43B0DFEDDE7AECB623662A188EC4393D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -5310,20 +5338,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A596ED40E4D83D643CFCC3FE354CA572 /* Build configuration list for PBXNativeTarget "Pods-GitHubExplorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD94DBF89EF0F0850806361E50B468D5 /* Debug */,
+				9693D984BFB975963416A0EA8F1B184D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A5C3E29C57F267050344FDDC39AA7BE0 /* Build configuration list for PBXNativeTarget "CwlCatchException" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E07803AB20D48CE50C0D35FE461DE4AB /* Debug */,
 				024793F10C4393E78FE17D523288EF95 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B074E85781F3DE3A64B398F67AE9BB2D /* Build configuration list for PBXNativeTarget "Pods-GitHubExplorerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				28A8076D1EAD688D8D3FBF8CBB5DB700 /* Debug */,
-				13D4E067127C5A3AA3638EC27326BD15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

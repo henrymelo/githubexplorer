@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-GitHubExplorerUITests/Pods-GitHubExplorerUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/CwlCatchException/CwlCatchException.framework
 ${BUILT_PRODUCTS_DIR}/CwlCatchExceptionSupport/CwlCatchExceptionSupport.framework
 ${BUILT_PRODUCTS_DIR}/CwlMachBadInstructionHandler/CwlMachBadInstructionHandler.framework

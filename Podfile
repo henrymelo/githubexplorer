@@ -14,12 +14,14 @@ target 'GitHubExplorer' do
 
   target 'GitHubExplorerTests' do
     inherit! :search_paths
+    pod 'SnapKit'
     pod 'Quick'
     pod 'Nimble'
   end
 
   target 'GitHubExplorerUITests' do
     inherit! :search_paths
+    pod 'SnapKit'
     pod 'Quick'
     pod 'Nimble'
   end
