@@ -49,8 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         LocationService.shared.requestLocationAndApplySeasonIcon()
         return true
         }
-
-
         
         if UIApplication.shared.supportsAlternateIcons {
             let month = Calendar.current.component(.month, from: Date())

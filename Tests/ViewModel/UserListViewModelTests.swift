@@ -5,15 +5,19 @@ import PromiseKit
 
 final class MockGitHubServiceForList: GitHubServiceProtocol {
     func fetchUsers() -> Promise<[User]> {
-        return .value([User(id: 1, login: "mockuser", avatarUrl: "https://mock.com/avatar.png")])
+        return Promise.value([User(id: 1, login: "mockuser", avatarUrl: "https://example.com")])
+    }
+
+    func fetchUsers(since: Int) -> Promise<[User]> {
+        return Promise.value([User(id: since + 1, login: "user\(since+1)", avatarUrl: "https://example.com")])
     }
 
     func fetchUserDetail(username: String) -> Promise<UserDetail> {
-        return .init(error: NSError(domain: "", code: 0))
+        return Promise.value(UserDetail(login: username, name: nil, bio: nil, followers: 0, following: 0, publicRepos: 0, company: nil, location: nil, avatarUrl: nil))
     }
 
     func fetchRepositories(for username: String) -> Promise<[Repository]> {
-        return .init(error: NSError(domain: "", code: 0))
+        return Promise.value([])
     }
 }
 
@@ -31,7 +35,7 @@ final class UserListViewModelTests: QuickSpec {
                 waitUntil { done in
                     viewModel.fetchUsers().done {
                         expect(viewModel.users.count).to(equal(1))
-                        expect(viewModel.users.first?.login).to(equal("mockuser"))
+                        expect(viewModel.users.first?.login).to(equal("user1"))
                         done()
                     }.catch { error in
                         fail("Should not fail: \(error)")

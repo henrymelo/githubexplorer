@@ -1,4 +1,5 @@
 import XCTest
+@testable import GitHubExplorer
 
 final class GitHubExplorerUITests: XCTestCase {
 
@@ -51,6 +52,7 @@ final class GitHubExplorerUITests: XCTestCase {
     }
 
     func testScrollTriggersPagination() {
+        let app = XCUIApplication()
         app.terminate()
         app.launchArguments += ["-uiTestPagination"]
         app.launch()
@@ -71,6 +73,7 @@ final class GitHubExplorerUITests: XCTestCase {
 
 
     func testDetailScrollTriggersRepositoryPagination() {
+        let app = XCUIApplication()
         app.terminate()
         app.launchArguments += ["-uiTestPagination"]
         app.launch()

@@ -11,12 +11,7 @@ final class RepositoryCacheTests: QuickSpec {
             beforeEach {
                 cache = RepositoryCache()
                 testRepos = [
-                    Repository(
-                        id: 1,
-                        name: "Test1",
-                        description: "Desc",
-                        stargazersCount: 1
-                    )
+                    Repository(name: "test", description: "", language: "", stargazersCount: 1, forksCount: 1, openIssuesCount: 1, updatedAt: "test", isPrivate: false, isArchived: false, htmlUrl: "http://www.test.com")
                 ]
             }
 
@@ -24,7 +19,7 @@ final class RepositoryCacheTests: QuickSpec {
                 cache.save(testRepos)
                 let loaded = cache.load()
                 expect(loaded.count).to(equal(1))
-                expect(loaded.first?.name).to(equal("Test1"))
+                expect(loaded.first?.name).to(equal("test"))
             }
         }
     }

@@ -21,23 +21,6 @@ extension UserDetailViewController {
         cell.contentConfiguration = content
         return cell
     }
-    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: RepositoryCell.identifier, for: indexPath) as? RepositoryCell else { return UITableViewCell() }
-//        let repository = viewModel.repositories[indexPath.row]
-//
-//        if #available(iOS 14.0, *) {
-//            var content = cell.defaultContentConfiguration()
-//            content.text = repository.name
-//            cell.contentConfiguration = content
-//        } else {
-//            cell.textLabel?.text = repository.name
-//        }
-//
-//        let repo = viewModel.repositories[indexPath.row]
-//        cell.configure(with: repo)
-//        return cell
-//    }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let repository = viewModel.repositories[indexPath.row]

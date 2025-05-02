@@ -8,12 +8,14 @@
 
 import AlamofireImage
 import UIKit
+import SnapKit
 
 
 private let avatarImageView = UIImageView()
 private let locationLabel = UILabel()
 
 class UserDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    private let errorView = ErrorStateView()
     var username: String?
     var viewModel: UserDetailViewModelProtocol
 
@@ -33,30 +35,55 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
         fatalError("init(coder:) has not been implemented")
     }
 
+    private func showErrorState(message: String, retryHandler: @escaping () -> Void) {
+        errorView.configure(type: .network, message: message)
+        errorView.onRetry = retryHandler
+        if errorView.superview == nil {
+            view.addSubview(errorView)
+        }
+        errorView.isHidden = false
+        view.bringSubviewToFront(errorView)
+        errorView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+
+    private func hideErrorState() {
+        errorView.isHidden = true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "Detalhes"
+        title = AppStrings.userDetailsTitle
         setupUI()
         bindViewModel()
         loadUserDetails()
     }
 
     private func setupUI() {
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(activityIndicator)
+
+        NSLayoutConstraint.activate([
+            activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "RepoCell")
         tableView.dataSource = self
         tableView.delegate = self
 
         let stack = UIStackView(arrangedSubviews: [nameLabel, bioLabel, followersLabel, followingLabel, tableView])
         stack.axis = .vertical
-        stack.spacing = 8
+        stack.spacing = LayoutConstants.compactSpacing
         stack.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(stack)
 
         NSLayoutConstraint.activate([
-            stack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
-            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            stack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: LayoutConstants.defaultSpacing),
+            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: LayoutConstants.defaultSpacing),
+            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -LayoutConstants.defaultSpacing),
             stack.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
@@ -65,6 +92,7 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
         viewModel.onRepositoriesUpdated = { [weak self] in
             DispatchQueue.main.async {
                 self?.activityIndicator.stopAnimating()
+                self?.hideErrorState()
                 self?.tableView.reloadData()
             }
         }
@@ -75,6 +103,7 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
 
         activityIndicator.startAnimating()
 
+        activityIndicator.startAnimating()
         viewModel.fetchUserDetail(username: username)
             .then { self.viewModel.fetchRepositories(for: username) }
             .done {
@@ -87,7 +116,10 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
                 self.tableView.reloadData()
             }
             .catch { error in
-                print("Erro ao carregar dados do usuário: \(error)")
+                self.activityIndicator.stopAnimating()
+                self.showErrorState(message: "Não foi possível carregar os detalhes dos dados do usuário selecionado. Por favor, Tente novamente mais tarde.") {
+                    self.loadUserDetails()
+                }
             }
     }
 

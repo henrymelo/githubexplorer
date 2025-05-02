@@ -51,7 +51,7 @@ final class RepositoryCell: UITableViewCell {
 
         contentView.addSubview(stack)
         stack.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(12)
+            make.edges.equalToSuperview().inset(LayoutConstants.avatarCornerRadius)
         }
     }
 

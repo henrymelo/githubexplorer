@@ -19,7 +19,7 @@ final class UserTableViewCell: UITableViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 8
+        imageView.layer.cornerRadius = LayoutConstants.compactSpacing
         imageView.layer.borderWidth = 1
         imageView.layer.borderColor = UIColor.systemGray3.cgColor
         imageView.backgroundColor = UIColor.systemGray5
@@ -54,14 +54,14 @@ final class UserTableViewCell: UITableViewCell {
 
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            avatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            avatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: LayoutConstants.defaultSpacing),
             avatarImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             avatarImageView.widthAnchor.constraint(equalToConstant: 48),
             avatarImageView.heightAnchor.constraint(equalToConstant: 48),
 
-            nameLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 12),
+            nameLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: LayoutConstants.avatarCornerRadius),
             nameLabel.centerYAnchor.constraint(equalTo: avatarImageView.centerYAnchor),
-            nameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16)
+            nameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -LayoutConstants.defaultSpacing)
         ])
     }
 
