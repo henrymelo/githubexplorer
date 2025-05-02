@@ -1,8 +1,9 @@
 platform :ios, '14.3'
+inhibit_all_warnings!
 
 pod 'SwiftLint'
-
 pod 'SkeletonView'
+
 target 'GitHubExplorer' do
   use_frameworks!
 
@@ -14,14 +15,12 @@ target 'GitHubExplorer' do
 
   target 'GitHubExplorerTests' do
     inherit! :search_paths
-    pod 'SnapKit'
     pod 'Quick'
     pod 'Nimble'
   end
 
   target 'GitHubExplorerUITests' do
     inherit! :search_paths
-    pod 'SnapKit'
     pod 'Quick'
     pod 'Nimble'
   end
