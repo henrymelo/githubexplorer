@@ -1,0 +1,30 @@
+name: Test Quality Improvements
+description: Acompanhamento das tarefas técnicas para melhorar a esteira de testes automatizados no projeto GitHubExplorer.
+
+views:
+  - name: Board
+    type: board
+    filters:
+      - filter: is:open
+    layout:
+      columns:
+        - name: 📋 To Do
+        - name: 🚧 In Progress
+        - name: ✅ Done
+
+automation_rules:
+  - event: issue_added
+    actions:
+      - move_to_column: 📋 To Do
+
+  - event: labeled
+    conditions:
+      - label: test
+    actions:
+      - move_to_column: 📋 To Do
+
+  - event: state_changed
+    conditions:
+      - state: closed
+    actions:
+      - move_to_column: ✅ Done

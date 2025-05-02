@@ -1,0 +1,23 @@
+included:
+  - Sources
+
+excluded:
+  - Tests
+  - UITests
+  - Pods
+  - build
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - first_where
+  - nimble_operator
+
+disabled_rules:
+  - line_length
+  - function_body_length
+  - type_body_length
+  - identifier_name
+  - todo
+
+reporter: github-actions-logging

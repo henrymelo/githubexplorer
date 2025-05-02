@@ -1,0 +1,30 @@
+name: Feature Request
+description: Sugira uma nova funcionalidade ou melhoria
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir! Por favor, descreva sua ideia abaixo.
+
+  - type: input
+    id: context
+    attributes:
+      label: Contexto
+      description: Qual é o problema ou necessidade que esta feature resolve?
+      placeholder: "Descreva o contexto..."
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: Como você imagina a solução funcionando?
+      placeholder: "Descreva a proposta de solução..."
+
+  - type: input
+    id: referencias
+    attributes:
+      label: Referências
+      description: Algum link, repositório ou imagem que ajude a entender melhor?
+      placeholder: "https://exemplo.com"

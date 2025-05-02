@@ -1,0 +1,25 @@
+name: Bug Report
+description: Reportar um bug no app
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: Descrição do problema
+      description: Explique claramente o bug encontrado.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Como reproduzir
+      description: Passos para reproduzir o problema.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Versão do app
+      description: Em qual versão o bug foi detectado?
+    validations:
+      required: false

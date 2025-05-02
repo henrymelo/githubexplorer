@@ -1,0 +1,31 @@
+name: GitHubExplorer
+
+targets:
+  GitHubExplorer:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+    resources:
+      - path: Sources/Resource/LaunchScreen.storyboard
+      - path: Sources/Resource/Asset.xcassets
+    settings:
+      base:
+        INFOPLIST_FILE: Sources/Info.plist
+        UILaunchStoryboardName: LaunchScreen
+
+  GitHubExplorerTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - target: GitHubExplorer
+
+  GitHubExplorerUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UITests
+    dependencies:
+      - target: GitHubExplorer

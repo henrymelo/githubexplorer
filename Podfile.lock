@@ -1,0 +1,73 @@
+PODS:
+  - Alamofire (5.10.2)
+  - AlamofireImage (4.3.0):
+    - Alamofire (~> 5.8)
+  - CwlCatchException (2.2.1):
+    - CwlCatchExceptionSupport (~> 2.2.1)
+  - CwlCatchExceptionSupport (2.2.1)
+  - CwlMachBadInstructionHandler (2.2.2)
+  - CwlPosixPreconditionTesting (2.2.2)
+  - CwlPreconditionTesting (2.2.2):
+    - CwlCatchException (~> 2.2.1)
+    - CwlMachBadInstructionHandler (~> 2.2.2)
+    - CwlPosixPreconditionTesting (~> 2.2.2)
+  - Nimble (13.7.1):
+    - CwlPreconditionTesting (~> 2.2.0)
+  - PromiseKit (8.2.0):
+    - PromiseKit/CorePromise (= 8.2.0)
+    - PromiseKit/Foundation (= 8.2.0)
+    - PromiseKit/UIKit (= 8.2.0)
+  - PromiseKit/CorePromise (8.2.0)
+  - PromiseKit/Foundation (8.2.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (8.2.0):
+    - PromiseKit/CorePromise
+  - Quick (7.6.2)
+  - SkeletonView (1.30.4)
+  - SnapKit (5.7.1)
+  - SwiftLint (0.59.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - Nimble
+  - PromiseKit (~> 8.2)
+  - Quick
+  - SkeletonView
+  - SnapKit
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - CwlCatchException
+    - CwlCatchExceptionSupport
+    - CwlMachBadInstructionHandler
+    - CwlPosixPreconditionTesting
+    - CwlPreconditionTesting
+    - Nimble
+    - PromiseKit
+    - Quick
+    - SkeletonView
+    - SnapKit
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  AlamofireImage: 843953fa97bee5f561cf05d83abd759e590b068d
+  CwlCatchException: 7acc161b299a6de7f0a46a6ed741eae2c8b4d75a
+  CwlCatchExceptionSupport: 54ccab8d8c78907b57f99717fb19d4cc3bce02dc
+  CwlMachBadInstructionHandler: dae4fdd124d45c9910ac240287cc7b898f4502a1
+  CwlPosixPreconditionTesting: ecd095aa2129e740b44301c34571e8d85906fb88
+  CwlPreconditionTesting: 67a0047dd4de4382b93442c0e3f25207f984f35a
+  Nimble: 317d713c30c3336dd8571da1889f7ec3afc626e8
+  PromiseKit: 74e6ab5894856b4762fef547055c809bca91d440
+  Quick: b8bec97cd4b9f21da0472d45580f763b801fc353
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  SwiftLint: 3d48e2fb2a3468fdaccf049e5e755df22fb40c2c
+
+PODFILE CHECKSUM: 447de8a6ebc5b36ba6b7e92ece3727cd42bb8d7b
+
+COCOAPODS: 1.16.2

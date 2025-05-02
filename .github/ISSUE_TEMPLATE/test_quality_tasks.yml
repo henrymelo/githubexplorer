@@ -1,0 +1,41 @@
+name: Test Coverage & Quality Improvements
+description: Tarefas técnicas para evolução da esteira de testes automatizados
+title: "[Test Task] "
+labels: [enhancement, test]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Esta issue agrupa tarefas técnicas para melhorar os testes automatizados do projeto.
+
+  - type: checkboxes
+    id: short_term
+    attributes:
+      label: 🔹 Curto Prazo – Alta Prioridade
+      options:
+        - label: Testar cenário de retorno vazio da API (lista de usuários)
+        - label: Garantir que chamadas repetidas de `fetchUsers()` não duplicam dados
+        - label: Testar escrita e leitura do cache com dados reais (UserDefaults)
+        - label: Usar `UserDefaults(suiteName:)` isolado nos testes
+        - label: Adicionar `accessibilityIdentifier` a botões e labels importantes
+        - label: Verificar acessibilidade de mensagens por VoiceOver
+
+  - type: checkboxes
+    id: mid_term
+    attributes:
+      label: 🔸 Médio Prazo – Robustez
+      options:
+        - label: Criar `MockURLProtocol` para simular respostas da API
+        - label: Simular respostas com atraso, 500, 404 e timeout
+        - label: Testar modo escuro (dark mode)
+        - label: Testar app em dispositivos menores (ex: iPhone SE)
+
+  - type: checkboxes
+    id: long_term
+    attributes:
+      label: 🔺 Longo Prazo – Qualidade Avançada
+      options:
+        - label: Adicionar testes de snapshot visual (UserList, UserDetail)
+        - label: Medir tempo de carregamento da UserList no CI
+        - label: Monitorar uso de memória ao carregar muitos repositórios
+        - label: Validar respostas da API com JSONSchema ou Codable mocks

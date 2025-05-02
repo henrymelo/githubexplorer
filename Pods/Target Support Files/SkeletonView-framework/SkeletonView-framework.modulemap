@@ -1,0 +1,6 @@
+framework module SkeletonView {
+  umbrella header "SkeletonView-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}

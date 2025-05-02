@@ -1,0 +1,55 @@
+import Quick
+import Nimble
+import PromiseKit
+@testable import GitHubExplorer
+
+final class MockGitHubServiceForList: GitHubServiceProtocol {
+    func fetchUsers() -> Promise<[User]> {
+        return .value([User(id: 1, login: "mockuser", avatarUrl: "https://mock.com/avatar.png")])
+    }
+
+    func fetchUserDetail(username: String) -> Promise<UserDetail> {
+        return .init(error: NSError(domain: "", code: 0))
+    }
+
+    func fetchRepositories(for username: String) -> Promise<[Repository]> {
+        return .init(error: NSError(domain: "", code: 0))
+    }
+}
+
+final class UserListViewModelTests: QuickSpec {
+    override class func spec() {
+        describe("UserListViewModel") {
+            var viewModel: UserListViewModel!
+
+            beforeEach {
+                let mockService = MockGitHubServiceForList()
+                viewModel = UserListViewModel(service: mockService)
+            }
+
+            it("fetches users and updates list") {
+                waitUntil { done in
+                    viewModel.fetchUsers().done {
+                        expect(viewModel.users.count).to(equal(1))
+                        expect(viewModel.users.first?.login).to(equal("mockuser"))
+                        done()
+                    }.catch { error in
+                        fail("Should not fail: \(error)")
+                        done()
+                    }
+                }
+            }
+
+            it("calls searchUsers without crashing") {
+                viewModel.searchUsers(query: "octocat")
+                // Sem crash = passou
+                expect(true).to(beTrue())
+            }
+
+            it("calls loadCachedUsers without crashing") {
+                viewModel.loadCachedUsers()
+                expect(true).to(beTrue())
+            }
+        }
+    }
+}
