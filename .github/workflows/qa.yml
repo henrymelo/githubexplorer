@@ -1,0 +1,33 @@
+
+name: QA
+
+on:
+  pull_request:
+    branches: [ release ]
+
+jobs:
+  ui-tests:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_16.2.app
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Install Fastlane
+        run: gem install fastlane -NV
+
+      - name: Sync Certificates with Match
+        run: fastlane match development
+        env:
+          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+          APP_STORE_CONNECT_API_KEY: ${{ secrets.APP_STORE_CONNECT_API_KEY }}
+
+      - name: Run UI Tests
+        run: xcodebuild test -scheme GitHubExplorerUITests -destination 'platform=iOS Simulator,name=iPhone 15'

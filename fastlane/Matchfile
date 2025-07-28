@@ -1,0 +1,6 @@
+
+git_url("git@github.com:seuorg/certificates.git")
+storage_mode("git")
+type("appstore")
+apple_team_id("TEAMID1234")
+username("seu.email@appleid.com")

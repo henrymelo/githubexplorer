@@ -1,0 +1,4 @@
+
+app_identifier("com.seuorg.GitHubExplorer")
+apple_id("seu.email@appleid.com")
+team_id("TEAMID1234")
